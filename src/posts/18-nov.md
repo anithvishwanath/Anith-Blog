@@ -4,7 +4,7 @@ title: "Moving!"
 ---
 Before I begin this post, I want to sincerely thank a very dear friend of mine, as they have encouraged me to write and I am very grateful for their kind words, wisdom, and inspiration.
 
-I find myself staring at my computer screen thinking of what to write, for I have fallen out of practice of writing and journaling. It is night currently (10:34 PM) and all is quiet around me... until I thought of the obvious thing to write about.
+I find myself staring at my computer screen thinking of what to write, for I have fallen out of practice of writing and journaling. It is night currently (10:34 PM) and all is quiet around me... and in this sombre mood, I thought of the obvious thing to write about.
 
 I will be moving soon!
 
