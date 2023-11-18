@@ -10,7 +10,7 @@ I will be moving soon!
 
 Far, far away from the land where I am located currently (India), I will be moving to the cool climes of Canada (specifically, Toronto). Presently, I have a weird rush of nostalgic feelings along with some sadness (as I will be moving away from the fam), and admittedly I am a bit intimidated by it all, yet I positively look forward to how my future unfolds. Thinking about it evokes a strong tempest of a lot of mixed and complex emotions within me. It all feels very bittersweet.
 
-I'm really keen on the environmental changes — at this point, I look forward to winters the most. Indian winters are pleasant at best. I have experienced Australian (*Melburnian) winters which aren't very cold by the average European/North American standards (typically 6°C or 46°F in the mornings); I used to walk around in layered clothing. 
+I'm really keen on the environmental changes — I look forward to winters the most. Indian winters are pleasant at best. I have experienced Australian (*Melburnian) winters which aren't very cold by the average European/North American standards (typically 6°C or 46°F in the mornings); I used to walk around in layered clothing. 
 
 At this point in my writing, I am smiling because I just thought of an old friend from The Netherlands who once described to me the similarities in the weather patterns between Melbourne and Rotterdam ("always rainy, wet, and cold, and people looking like Fall/Winter catalog models in their layered clothes"). 
 
