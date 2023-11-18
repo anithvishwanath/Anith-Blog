@@ -4,7 +4,6 @@
         url("../fonts/GT-America-Standard-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 :root {
@@ -87,7 +86,7 @@ time {
     bottom: 0;
     /* background-color: #E3E3B9; */
     background-color: var(--sidebar-background);
-    width: min(10em, 25vw);
+    width: min(12em, 25vw);
 }
 
 .sidebar-content {
@@ -176,7 +175,6 @@ a {
     margin-top: 5em;
     margin-bottom: 5em;
 }
-
 
 /* ———————— MEDIA QUERIES ——————— */
 @media screen and (max-width: 600px) {
