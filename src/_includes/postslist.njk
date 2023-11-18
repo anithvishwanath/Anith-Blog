@@ -1,0 +1,12 @@
+<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+{% for post in collections.posts | reverse %}
+  <li class="postlist-item">
+    <div>
+      <a href="/{{ post.fileSlug }}"><h2 class="post-title"> {{ post.data.title }} </h2></a>
+      <time datetime="{{ post.date }}"> {{ post.date | fullDate }} </time>
+      {{ post.templateContent | safe }}
+      <a href="/{{ post.fileSlug }}" class="permalink">Permalink</a>
+    </div>
+  </li>
+{% endfor %}
+</ol>
