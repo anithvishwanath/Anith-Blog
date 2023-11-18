@@ -12,7 +12,7 @@ Far, far away from where I am located currently (India), I will be moving to the
 
 I'm really keen on the environmental changes — I look forward to winters the most. Indian winters are pleasant at best. I have experienced Australian (*Melburnian) winters which aren't very cold by European/North American standards (typically 6°C or 46°F in the mornings); I used to walk around in layered clothing. At this point in my writing, I am smiling because I just thought of an old friend from The Netherlands who once described to me the similarities in the weather patterns between Melbourne and Rotterdam (always rainy, wet, and cold, and people looking like Fall/Winter catalog models in their layered clothes). 
 
-I still have memories of the tip of my nose and hands feeling cold, and can recollect that feeling to the point where I can, weirdly, feel the phantom sensations in my extremities—maybe the cells in my body were strongly affected by the cold, HAHA. 
+I still have memories of the tip of my nose and hands feeling cold, and can recollect that feeling to the point where I can, weirdly, still feel the phantom sensations in my extremities—maybe the cells in my body were strongly affected by the cold, HAHA. 
 
 Speaking of layers, I also just remembered a chat I had with a friend (the same friend I mentioned in the beginning of this post) not too long ago, about what I need to get and they guided me and prepped me on lots of things I need to look out for. SO I am going to definitely be adding a lot of winter clothing to my wardrobe! (Thank you, friend!)
 
