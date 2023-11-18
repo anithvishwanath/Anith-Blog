@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "Moving to Canada"
+title: "Moving to Canada (soon)"
 ---
 _Before I begin this post, I want to sincerely thank a very dear friend of mine, as they have encouraged me to write and I am very grateful for their kind words, wisdom, and inspiration._
 
