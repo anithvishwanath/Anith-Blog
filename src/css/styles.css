@@ -104,7 +104,6 @@ time {
 .page-title a {
     font-weight: normal;
     font-size: var(--font-size-lg);
-    line-height: 0;
     letter-spacing: -0.03em;
 }
 
