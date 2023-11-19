@@ -103,10 +103,9 @@ time {
 
 .page-title a {
     font-weight: normal;
-    letter-spacing: -0.01em;
     font-size: var(--font-size-lg);
     line-height: 0;
-    letter-spacing: -.03em;
+    letter-spacing: -0.03em;
 }
 
 .blog-sidebar li,
@@ -169,7 +168,7 @@ a {
 .permalink,
 .back-btn {
     font-size: var(--font-size-sm);
-    color: var(--text-secondary) !important;
+    color: var(--text-secondary);
     text-decoration: none;
     text-transform: lowercase;
     display: inline-block;
