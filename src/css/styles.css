@@ -15,8 +15,7 @@
 
 :root {
     --background: #FFFFFF;
-    /* --sidebar-background: #E0E0AE; */
-    --sidebar-background: #FFFFFF;
+    --sidebar-background: #E0E0AE;
 
     --text-primary: #222222;
     --text-secondary: #868e96;
