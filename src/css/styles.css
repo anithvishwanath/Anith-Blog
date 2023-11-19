@@ -62,7 +62,7 @@ a[href]:hover {
 time {
     color: var(--text-secondary);
     font-size: var(--font-size-sm);
-    margin-bottom: 0.25em;
+    margin-bottom: 1em;
     display: block;
 }
 
@@ -119,6 +119,14 @@ a {
 
 .sidebar-year {
     color: var(--accent);
+    margin-bottom: 0.25em;
+}
+
+.sidebar-time {
+    font-size: var(--font-size-lg);
+    font-weight: normal;
+    letter-spacing: 0;
+    display: inline-block;
 }
 
 .blog-content {
