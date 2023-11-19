@@ -6,5 +6,6 @@ eleventyComputed:
 <article class="post-item">
     <h1 class="post-title">{{ title }}</h1>
     <time> {{ page.date | fullDate }} </time>
+    {{ content | safe }}
     <a href="/" class="back-btn">← Go back</a>
 </article>
