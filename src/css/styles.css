@@ -176,7 +176,7 @@ a {
     font-size: var(--font-size-sm);
     color: var(--text-secondary) !important;
     text-decoration: none;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     display: inline-block;
     margin: 0;
 }
