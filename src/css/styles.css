@@ -250,9 +250,4 @@ a {
     .postlist-item:before {
         display: none;
     }
-
-    .permalink,
-    .back-btn {
-        margin-top: 0.5em;
-    }
 }
