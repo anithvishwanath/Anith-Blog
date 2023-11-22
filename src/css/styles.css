@@ -6,17 +6,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/GT-America-Standard-Regular-Italic.woff2") format("woff2"),
+        url("../fonts/GT-America-Standard-Regular-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
 :root {
     --background: #FFFFFF;
     --sidebar-background: #E0E0AE;
 
-    --text-primary: #222222;
+    --text-primary: #1a1a1a;
     --text-secondary: #868e96;
 
-    --accent: #656531;
+    --link-default: #222222;
+    --link-hover: #3c3c1a;
 
-    --link-default: #343a40;
-    --link-hover: #686816;
+    --accent: #656531;
 
     --font-size-lg: 1.225rem;
     --font-size-md: 0.925rem;
@@ -31,16 +39,20 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     font-family: 'GT America', sans-serif;
     font-feature-settings: "ss03";
-}
-
-body {
     background-color: var(--background);
     color: var(--text-primary);
     overflow-y: scroll;
     -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
 }
 
 p,
@@ -62,7 +74,7 @@ a[href]:hover {
 time {
     color: var(--text-secondary);
     font-size: var(--font-size-sm);
-    margin-bottom: 0.25em;
+    margin-bottom: 1em;
     display: block;
 }
 
@@ -71,7 +83,6 @@ time {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-columns: minmax(100px, 25%) 1fr; */
     justify-content: center;
     grid-template-areas:
         "sidebar content";
@@ -83,7 +94,6 @@ time {
     position: fixed;
     top: 0;
     bottom: 0;
-    /* background-color: #E3E3B9; */
     background-color: var(--sidebar-background);
     width: min(12em, 25vw);
 }
@@ -104,10 +114,8 @@ time {
 
 .page-title a {
     font-weight: normal;
-    letter-spacing: -0.01em;
-    font-size: 1.25rem;
-    line-height: 0;
-    letter-spacing: -.03em;
+    font-size: var(--font-size-lg);
+    letter-spacing: -0.03em;
 }
 
 .blog-sidebar li,
@@ -119,6 +127,14 @@ a {
 
 .sidebar-year {
     color: var(--accent);
+    margin-bottom: 0.25em;
+}
+
+.sidebar-time {
+    font-size: var(--font-size-lg);
+    font-weight: normal;
+    letter-spacing: 0;
+    display: inline-block;
 }
 
 .blog-content {
@@ -176,19 +192,8 @@ a {
 }
 
 /* ———————— MEDIA QUERIES ——————— */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     :root {
-        --background: #FFFFFF;
-        --sidebar-background: #E0E0AE;
-
-        --text-primary: #222222;
-        --text-secondary: #868e96;
-
-        --accent: #656531;
-
-        --link-default: #343a40;
-        --link-hover: #686816;
-
         --font-size-lg: 1.5rem;
         --font-size-md: 1rem;
         --font-size-sm: 0.9rem;
@@ -199,7 +204,7 @@ a {
     }
 
     time {
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
 
     .blog-container {
@@ -218,7 +223,7 @@ a {
     }
 
     .page-title a {
-        font-size: var( --font-size-lg);
+        font-size: var(--font-size-lg);
     }
 
     .blog-content {
@@ -238,9 +243,29 @@ a {
     .postlist-item:before {
         display: none;
     }
+}
 
-    .permalink,
-    .back-btn {
-        margin-top: 0.5em;
+@media screen and (min-width: 1680px) {
+    :root {
+        --font-size-lg: 1.25rem;
+        --font-size-md: 1rem;
+        --font-size-sm: 0.875rem;
+    }
+
+    .blog-container {
+        gap: 1.25em;
+    }
+
+    .blog-sidebar {
+        width: min(16em, 25vw);
+    }
+
+    .blog-content {
+        grid-column-start: 6;
+        grid-column-end: 9;
+    }
+
+    .page-title a {
+        font-size: var(--font-size-lg);
     }
 }

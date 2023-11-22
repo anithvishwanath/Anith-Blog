@@ -8,7 +8,7 @@
             {% for year, yearPosts in collections.postsByYear %}
                 <time class="sidebar-year">{{ year }}</time>
                 {% for post in yearPosts | reverse %}
-                    <li><span class="post-title"><a href="/{{ post.fileSlug }}">{{ post.date | readableDate }}</a> </span></li>
+                    <li><span class="sidebar-time"><a href="/{{ post.fileSlug }}">{{ post.date | readableDate }}</a> </span></li>
                 {% endfor %}
             {% endfor %}
         </nav>

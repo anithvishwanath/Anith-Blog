@@ -1,17 +1,17 @@
 {
     "title": "Anith's blog",
-    "url": "https://localhost:8080/",
+    "url": "https://anith.blog",
     "language": "en",
     "description": "Anith writes about feels, heals, design, and creativity.",
     "feed": {
         "subtitle": "",
         "filename": "feed.xml",
         "path": "/feed/feed.xml",
-        "id": "https://localhost:8080/"
+        "id": "https://anith.blog/"
     },
     "jsonfeed": {
         "path": "/feed/feed.json",
-        "url": "https://localhost:8080/feed/feed.json"
+        "url": "https://anith.blog/feed/feed.json"
     },
     "author": {
         "name": "Anith Vishwanath",

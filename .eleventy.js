@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("fullDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).setLocale('en').toLocaleString(DateTime.DATE_FULL);
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).setLocale('en').toLocaleString(DateTime.DATE_HUGE);
   });
 
   eleventyConfig.addFilter("year", (dateObj) => {
