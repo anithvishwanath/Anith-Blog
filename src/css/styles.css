@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "GT America";
     src: url("../fonts/GT-America-Standard-Regular-Italic.woff2") format("woff2"),
@@ -17,13 +18,13 @@
     --background: #FFFFFF;
     --sidebar-background: #E0E0AE;
 
-    --text-primary: #222222;
+    --text-primary: #1a1a1a;
     --text-secondary: #868e96;
 
-    --accent: #656531;
+    --link-default: #222222;
+    --link-hover: #3c3c1a;
 
-    --link-default: #343a40;
-    --link-hover: #686816;
+    --accent: #656531;
 
     --font-size-lg: 1.225rem;
     --font-size-md: 0.925rem;
@@ -38,16 +39,20 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     font-family: 'GT America', sans-serif;
     font-feature-settings: "ss03";
-}
-
-body {
     background-color: var(--background);
     color: var(--text-primary);
     overflow-y: scroll;
     -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
 }
 
 p,
@@ -89,7 +94,6 @@ time {
     position: fixed;
     top: 0;
     bottom: 0;
-    /* background-color: #E3E3B9; */
     background-color: var(--sidebar-background);
     width: min(12em, 25vw);
 }
@@ -190,17 +194,6 @@ a {
 /* ———————— MEDIA QUERIES ——————— */
 @media screen and (max-width: 768px) {
     :root {
-        --background: #FFFFFF;
-        --sidebar-background: #E0E0AE;
-
-        --text-primary: #222222;
-        --text-secondary: #868e96;
-
-        --accent: #656531;
-
-        --link-default: #343a40;
-        --link-hover: #686816;
-
         --font-size-lg: 1.5rem;
         --font-size-md: 1rem;
         --font-size-sm: 0.9rem;
@@ -230,7 +223,7 @@ a {
     }
 
     .page-title a {
-        font-size: var( --font-size-lg);
+        font-size: var(--font-size-lg);
     }
 
     .blog-content {
@@ -249,5 +242,30 @@ a {
 
     .postlist-item:before {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    :root {
+        --font-size-lg: 1.25rem;
+        --font-size-md: 1rem;
+        --font-size-sm: 0.875rem;
+    }
+
+    .blog-container {
+        gap: 1.25em;
+    }
+
+    .blog-sidebar {
+        width: min(16em, 25vw);
+    }
+
+    .blog-content {
+        grid-column-start: 6;
+        grid-column-end: 9;
+    }
+
+    .page-title a {
+        font-size: var(--font-size-lg);
     }
 }
