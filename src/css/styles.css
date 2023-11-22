@@ -140,7 +140,7 @@ a {
 .blog-content {
     grid-area: content;
     grid-column-start: 5;
-    grid-column-end: 10;
+    grid-column-end: 9;
 }
 
 /* Posts */
