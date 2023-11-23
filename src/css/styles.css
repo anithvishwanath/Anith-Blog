@@ -161,7 +161,7 @@ a {
     margin-bottom: 5em;
 }
 
-.postlist-item:before {
+/* .postlist-item:before {
     display: inline-block;
     pointer-events: none;
     content: "" counter(start-from, decimal-leading-zero) ". ";
@@ -169,7 +169,7 @@ a {
     text-align: right;
     color: var(--text-secondary);
     padding-right: 0.25em;
-}
+} */
 
 .post-title {
     font-size: var(--font-size-lg);
