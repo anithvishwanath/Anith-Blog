@@ -261,19 +261,19 @@ a {
     }
 
     .journal-entry-responsive { 
-        display: inline;
+        display: inline-block;
         margin-bottom: 0em;
         color: var(--text-secondary);
         font-size: var(--font-size-sm);
     }
 
     .post-title {
-        display: block;
         margin-bottom: 0.5em;
+        width: 100%;
     }
 }
 
-/* Tablet Landscape */
+/* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
     :root {
         --font-size-lg: 1.5rem;
