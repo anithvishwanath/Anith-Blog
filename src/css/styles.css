@@ -108,6 +108,10 @@ time {
     height: 100%;
 }
 
+.page-title-responsive {
+    display: none;
+}
+
 .page-title {
     line-height: 1.3;
 }
@@ -192,7 +196,7 @@ a {
 }
 
 /* ———————— MEDIA QUERIES ——————— */
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 240px) and (max-width: 812px) {
     :root {
         --font-size-lg: 1.5rem;
         --font-size-md: 1rem;
@@ -211,28 +215,21 @@ a {
         display: flex;
     }
 
-    .blog-sidebar {
-        background-color: transparent;
-        position: absolute;
-        width: 100%;
-        margin: 0 auto;
+    .page-title-responsive {
+        display: block;
+        line-height: 1.3;
     }
-
-    .blog-sidebar li {
-        display: none;
-    }
-
-    .page-title a {
+    
+    .page-title-responsive a {
+        font-weight: normal;
         font-size: var(--font-size-lg);
+        letter-spacing: -0.03em;
     }
 
-    .blog-content {
-        margin: 0 auto;
-    }
-
-    .sidebar-year {
+    .blog-sidebar {
         display: none;
     }
+
 
     .postlist-item {
         display: flex;
