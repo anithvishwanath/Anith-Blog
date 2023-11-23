@@ -1,5 +1,6 @@
 <ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in collections.posts | reverse %}
+  <li>
     <div class="post-container">
       <span class="postlist-item">
         <time class="journal-entry-responsive" datetime="{{ post.date }}">{{ post.date | fullDate }} </time>
@@ -9,5 +10,6 @@
       {{ post.templateContent | safe }}
       <a href="/{{ post.fileSlug }}" class="permalink">Permalink</a>
     </div>
+  </li>
 {% endfor %}
 </ol>
