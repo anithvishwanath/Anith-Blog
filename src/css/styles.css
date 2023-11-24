@@ -292,6 +292,15 @@ a {
         margin-bottom: 0.5em;
         width: 100%;
     }
+
+    .post-links {
+        font-size: var(--font-size-sm);
+    }
+    
+    .post-links a {
+        font-size: var(--font-size-sm);
+        text-decoration: dotted underline;
+    }
 }
 
 /* Tablet */
