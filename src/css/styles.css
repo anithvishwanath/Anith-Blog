@@ -140,6 +140,7 @@ a {
 .sidebar-year {
     color: var(--accent);
     margin-bottom: 0.25em;
+    font-size: var(--font-size-sm);
 }
 
 .sidebar-time {
