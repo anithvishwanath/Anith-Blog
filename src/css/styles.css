@@ -80,7 +80,6 @@ blockquote {
 
 sup,
 sub {
-    color: var(--text-secondary);
     font-size: 0.75rem;
 }
 
