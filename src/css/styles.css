@@ -71,6 +71,12 @@ a[href]:hover {
     color: var(--link-hover);
 }
 
+sup,
+sub {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
 /* Blog container */
 .blog-container {
     display: grid;
