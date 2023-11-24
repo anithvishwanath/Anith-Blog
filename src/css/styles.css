@@ -24,6 +24,7 @@
     --link-default: #222222;
     --link-hover: #3c3c1a;
 
+    --accent-light: #d9d9d9;
     --accent: #656531;
 
     --font-size-lg: 1.225rem;
@@ -71,10 +72,16 @@ a[href]:hover {
     color: var(--link-hover);
 }
 
+blockquote {
+    border-inline-start: 0.25em solid var(--accent-light);
+    padding-inline-start: 1em;
+    font-style: italic;
+}
+
 sup,
 sub {
     color: var(--text-secondary);
-    font-size: var(--font-size-sm);
+    font-size: 0.75rem;
 }
 
 /* Blog container */
@@ -110,7 +117,7 @@ sub {
     display: none;
 }
 
-.journal-entry-responsive { 
+.journal-entry-responsive {
     display: none;
 }
 
@@ -193,7 +200,7 @@ a {
     text-align: right;
     padding-right: 0.25em;
     color: var(--text-secondary);
-} 
+}
 
 .post-title {
     font-size: var(--font-size-lg);
@@ -217,6 +224,15 @@ a {
 .post-item {
     margin-top: 5em;
     margin-bottom: 5em;
+}
+
+.post-links {
+    font-size: var(--font-size-sm);
+}
+
+.post-links a {
+    font-size: var(--font-size-sm);
+    text-decoration: dotted underline;
 }
 
 /* ———————— MEDIA QUERIES ——————— */
@@ -260,13 +276,13 @@ a {
         text-align: left;
         padding: 0;
         content: "#" counter(start-from, decimal-leading-zero) " / ";
-    } 
+    }
 
     .journal-entry {
         display: none;
     }
 
-    .journal-entry-responsive { 
+    .journal-entry-responsive {
         display: inline-block;
         margin-bottom: 0em;
         color: var(--text-secondary);
@@ -286,7 +302,7 @@ a {
         --font-size-md: 1rem;
         --font-size-sm: 0.85rem;
     }
-    
+
     body {
         margin: 1em;
     }
@@ -325,7 +341,7 @@ a {
 
     .blog-sidebar {
         width: min(12em, 25vw);
-    }    
+    }
 
     .blog-content {
         grid-column: 5/8;
