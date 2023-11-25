@@ -22,7 +22,7 @@
     --text-secondary: #868e96;
 
     --link-default: #222222;
-    --link-hover: #3c3c1a;
+    --link-hover: #4E4E4E;
 
     --accent: #656531;
 
@@ -69,6 +69,7 @@ a[href] {
 
 a[href]:hover {
     color: var(--link-hover);
+    text-decoration: underline;
 }
 
 blockquote {
@@ -133,6 +134,10 @@ sub {
     font-weight: normal;
     font-size: var(--font-size-lg);
     letter-spacing: -0.03em;
+}
+
+.page-title a:hover {
+    text-decoration: none;
 }
 
 .blog-sidebar li,
@@ -206,6 +211,10 @@ a {
     letter-spacing: -0.03em;
     line-height: 1.5;
     display: inline-block;
+}
+
+.post-title:hover {
+    text-decoration: underline;
 }
 
 .permalink,
