@@ -109,7 +109,7 @@ sub {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 0;
-    height: 98%;
+    height: 100%;
 }
 
 .page-title-responsive {
@@ -170,6 +170,7 @@ a {
 .blog-footer {
     font-size: var(--font-size-xs);
     color: var(--accent);
+    margin-bottom: 1em;
 }
 
 .blog-footer span {
