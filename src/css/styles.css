@@ -29,6 +29,7 @@
     --font-size-lg: 1.225rem;
     --font-size-md: 0.925rem;
     --font-size-sm: 0.85rem;
+    --font-size-xs: 0.75rem;
 }
 
 *,
@@ -103,13 +104,12 @@ sub {
 }
 
 .sidebar-content {
+    margin: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1em;
-    padding-bottom: 1em;
     margin-top: 0;
-    height: 100%;
+    height: 98%;
 }
 
 .page-title-responsive {
@@ -128,6 +128,7 @@ sub {
 
 .page-title {
     line-height: 1.3;
+    margin-bottom: 1em;
 }
 
 .page-title a {
@@ -164,6 +165,16 @@ a {
     grid-area: content;
     grid-column-start: 5;
     grid-column-end: 9;
+}
+
+.blog-footer {
+    font-size: var(--font-size-xs);
+    color: var(--accent);
+}
+
+.blog-footer span {
+    display: block;
+    margin-bottom: 0.25em;
 }
 
 /* Posts */

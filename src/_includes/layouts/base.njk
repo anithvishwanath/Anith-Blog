@@ -1,17 +1,22 @@
 {% include "partials/_header.njk" %}
 <div class="blog-sidebar">
     <div class="sidebar-content">
-        <header class="blog-header" role="banner">
-            <h1 class="page-title"><a href="{{ '/' | url }}">{{ meta.title }}</a></h1>
-        </header>
-        <nav>
-            {% for year, yearPosts in collections.postsByYear %}
-                <time class="sidebar-year">{{ year }}</time>
-                {% for post in yearPosts | reverse %}
-                    <li><span class="sidebar-time"><a href="/{{ post.fileSlug }}">{{ post.date | readableDate }}</a> </span></li>
+        <div class="sidebar-archive">
+            <header class="blog-header" role="banner">
+                <h1 class="page-title"><a href="{{ '/' | url }}">{{ meta.title }}</a></h1>
+            </header>
+            <nav>
+                {% for year, yearPosts in collections.postsByYear %}
+                    <time class="sidebar-year">{{ year }}</time>
+                    {% for post in yearPosts | reverse %}
+                        <li><span class="sidebar-time"><a href="/{{ post.fileSlug }}">{{ post.date | readableDate }}</a> </span></li>
+                    {% endfor %}
                 {% endfor %}
-            {% endfor %}
-        </nav>
+            </nav>
+        </div>
+        <footer class="blog-footer">
+        <span>Be kind. 🌱🌻</span>
+        <em>This website is not indexed, and uses no trackers or analytics.</em></footer>
     </div>
 </div>
 <main role="main" class="blog-content">
