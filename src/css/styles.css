@@ -172,6 +172,11 @@ a {
     color: var(--accent);
 }
 
+.blog-footer span {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
 /* Posts */
 .journal-entry {
     color: var(--text-secondary);
