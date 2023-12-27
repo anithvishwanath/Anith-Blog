@@ -171,11 +171,17 @@ a {
     font-size: var(--font-size-xs);
     color: var(--accent);
     margin-bottom: 1em;
+    padding-top: .5em;
+    border-top: 1px solid var(--accent);
 }
 
 .blog-footer span {
     display: block;
     margin-bottom: 0.25em;
+}
+
+.blog-footer a {
+    font-size: var(--font-size-xs);
 }
 
 /* Posts */
