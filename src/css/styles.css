@@ -32,6 +32,8 @@
     --font-size-xs: 0.64rem;
 }
 
+::selection {color: var(--text-primary); background: var(--sidebar-background);}
+
 *,
 *:before,
 *:after {
@@ -261,7 +263,8 @@ a {
 }
 
 .post-links a {
-    font-size: var(--font-size-sm);
+    text-decoration: underline;
+    font-size: var(--font-size-md);
 }
 
 /* ———————— MEDIA QUERIES ——————— */

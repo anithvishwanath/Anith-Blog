@@ -13,6 +13,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "lodash": "^4.17.21",
-    "luxon": "^3.4.3"
+    "luxon": "^3.4.3",
+    "markdown-it": "^14.0.0",
+    "markdown-it-attrs": "^4.1.6"
   }
 }

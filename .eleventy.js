@@ -1,5 +1,7 @@
 const { DateTime } = require('luxon');
 const { chain, toPairs, value, _ } = require('lodash');
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -24,6 +26,16 @@ module.exports = function (eleventyConfig) {
       .reverse()
       .value();
   });
+
+  const mdOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  const markdownLib = markdownIt(mdOptions).use(markdownItAttrs).disable("code");
+
+  eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/css");
