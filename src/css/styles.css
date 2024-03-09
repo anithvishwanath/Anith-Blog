@@ -267,6 +267,7 @@ img {
     text-transform: lowercase;
     display: block;
     margin: 0;
+    font-weight: 500 !important;
 }
 
 /* Individual post */
