@@ -1,11 +1,7 @@
 {% include "partials/_header.njk" %}
-<div class="overlay" style="position: fixed; top: 0; left: 0; pointer-events: none; overflow-x: hidden; overflow-y: hidden; width: 100vw; height: 100vh; background: white; z-index:9999"></div>
-<div class="blog-sidebar">
+<!-- <div class="blog-sidebar">
     <div class="sidebar-content">
         <div class="sidebar-archive">
-            <header class="blog-header" role="banner">
-                <h1 class="page-title"><a href="{{ '/' | url }}">{{ meta.title }}</a></h1>
-            </header>
             <nav>
                 {% for year, yearPosts in collections.postsByYear %}
                     <time class="sidebar-year">{{ year }}</time>
@@ -15,16 +11,12 @@
                 {% endfor %}
             </nav>
         </div>
-        <footer class="blog-footer">
-        <span>&copy; 2024. Be kind. 🌱🌻</span>
-        <span>Type set in GT America by <a href="https://www.grillitype.com/typeface/gt-america" target="_blank" rel="nofollow">Grilli Type</a> Foundry.</span>
-        <em>This website is not indexed, and uses no trackers or analytics.</em></footer>
     </div>
-</div>
+</div> -->
 <main role="main" class="blog-content">
-<h1 class="page-title-responsive"><a href="{{ '/' | url }}">{{ meta.title }}</a></h1>
     {{ content | safe }}
 </main>
+{% include "partials/_footer.njk" %}
 </div>
 </body>
 </html>
