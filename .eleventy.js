@@ -3,14 +3,14 @@ const { chain, toPairs, value, _ } = require('lodash');
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const Image = require("@11ty/eleventy-img");
+const path = require("path");
 
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw";
-  let srcPrefix = `assets/img/`;
+  let srcPrefix = `src/assets/`;
   src = srcPrefix + src;
   console.log(`Generating image(s) from:  ${src}`);
   if (alt === undefined) {
-    // Throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
   let metadata = await Image(src, {
@@ -48,6 +48,33 @@ async function imageShortcode(src, alt) {
       decoding="async">
   </picture>`;
 }
+
+/**
+ * @param {*} doc A real big object full of all sorts of information about a document
+ * @returns {String} the markup of the first image.
+ * reference/credit: https://github.com/11ty/eleventy/issues/230
+ *
+ */
+function extractFirstImage(doc) {
+  if (!doc.hasOwnProperty("templateContent")) {
+    console.warn(
+      "❌ Failed to extract image: Document has no property `templateContent`."
+    );
+    return;
+  }
+
+  const content = doc.templateContent;
+
+  if (content.includes("<img")) {
+    const imgTagBegin = content.indexOf("<img");
+    const imgTagEnd = content.indexOf(">", imgTagBegin);
+
+    return content.substring(imgTagBegin, imgTagEnd + 1);
+  }
+
+  return "";
+}
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
