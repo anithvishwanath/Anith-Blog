@@ -61,17 +61,13 @@ h3 {
     font-size: var(--font-size-lg);
     margin-top: 1.25em;
     margin-bottom: 0.25em;
-    letter-spacing: -.03em;
+    letter-spacing: -.02em;
 }
 
 p {
     font-size: var(--font-size-md);
     line-height: 1.5;
     margin-bottom: 1em;
-}
-
-li {
-    margin-bottom: .625em;
 }
 
 ul {
