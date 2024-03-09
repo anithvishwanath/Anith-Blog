@@ -2,6 +2,52 @@ const { DateTime } = require('luxon');
 const { chain, toPairs, value, _ } = require('lodash');
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
+const Image = require("@11ty/eleventy-img");
+
+async function imageShortcode(src, alt) {
+  let sizes = "(min-width: 1024px) 100vw, 50vw";
+  let srcPrefix = `assets/img/`;
+  src = srcPrefix + src;
+  console.log(`Generating image(s) from:  ${src}`);
+  if (alt === undefined) {
+    // Throw an error on missing alt (alt="" works okay)
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+  }
+  let metadata = await Image(src, {
+    widths: [400, 900, 1600],
+    formats: ["webp", "jpeg", "png"],
+    urlPath: "/assets/",
+    outputDir: "./_site/assets/",
+    /* =====
+    Now we'll make sure each resulting file's name will 
+    make sense to you. **This** is why you need 
+    that `path` statement mentioned earlier.
+    ===== */
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    },
+  });
+  let lowsrc = metadata.jpeg[0];
+  return `<picture>
+    ${Object.values(metadata)
+      .map((imageFormat) => {
+        return `  <source type="${imageFormat[0].sourceType
+          }" srcset="${imageFormat
+            .map((entry) => entry.srcset)
+            .join(", ")}" sizes="${sizes}">`;
+      })
+      .join("\n")}
+    <img
+      src="${lowsrc.url}"
+      width="${lowsrc.width}"
+      height="${lowsrc.height}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async">
+  </picture>`;
+}
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -26,6 +72,12 @@ module.exports = function (eleventyConfig) {
       .reverse()
       .value();
   });
+
+  eleventyConfig.addShortcode("first_image", (post) => extractFirstImage(post));
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   const mdOptions = {
     html: true,

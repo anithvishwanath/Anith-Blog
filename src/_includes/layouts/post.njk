@@ -4,7 +4,6 @@ eleventyComputed:
     date: "{{ page.date }}"
 ---
 <article class="post-item">
-    <time class="journal-entry-responsive" datetime="{{ post.date }}">{{ page.date | fullDate }} </time>
     <h2 class="post-title">{{ title }}</h2>
     <time class="journal-entry" datetime="{{ post.date }}"> {{ page.date | fullDate }} </time>
     {{ content | safe }}

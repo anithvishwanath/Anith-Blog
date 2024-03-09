@@ -16,5 +16,8 @@
     "luxon": "^3.4.3",
     "markdown-it": "^14.0.0",
     "markdown-it-attrs": "^4.1.6"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^4.0.2"
   }
 }
