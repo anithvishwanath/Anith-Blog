@@ -291,10 +291,13 @@ img {
 /* ———————— MEDIA QUERIES ——————— */
 /* Phone */
 @media only screen and (min-width: 240px) and (max-width: 812px) {
-    
     body {
         padding: 0;
         margin: 1em;
+    }
+
+    img {
+        width: 100%;
     }
 
     .navbar {
