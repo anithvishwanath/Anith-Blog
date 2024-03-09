@@ -4,6 +4,7 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
+const pluginNavigation = require("@11ty/eleventy-navigation");
 
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw";
@@ -104,6 +105,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+
+  eleventyConfig.addPlugin(pluginNavigation);
 
   const mdOptions = {
     html: true,

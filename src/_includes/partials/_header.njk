@@ -10,10 +10,15 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
-        <nav class="navbar">
+        <div class="blog-container">
+        <nav class="navbar" role="navigation">
             <header class="blog-header" role="banner">
                 <h1 class="page-title"><a href="{{ '/' | url }}">{{ meta.title }}</a></h1>
             </header>
+            <ul class="nav-links">
+                {%- for entry in collections.all | eleventyNavigation %}
+                <li class="nav-link{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{entry.url | url}}">{{ entry.title }}</a></li>
+                {%- endfor %}
+            </ul>
         </nav>
-        <div class="blog-container">
     
