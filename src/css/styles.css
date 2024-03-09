@@ -26,12 +26,11 @@
 
     --accent: #656531;
 
-    --font-size-title: 1.5rem;
-    --font-size-lg: 1.2rem;
+    --font-size-title: 1.476rem;
+    --font-size-lg: 1.296rem;
     --font-size-md: 1rem;
-    --font-size-sm: 0.875rem;
+    --font-size-sm: 0.937rem;
     --font-size-xs: 0.688rem;
-    --font-size-quote: 1.2rem;
 }
 
 *,
@@ -99,7 +98,7 @@ blockquote {
 }
 
 blockquote p {
-    font-size: var(--font-size-quote);
+    font-size: var(--font-size-lg);
     margin-bottom: 1em;
 }
 
