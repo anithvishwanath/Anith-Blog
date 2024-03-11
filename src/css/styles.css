@@ -112,6 +112,7 @@ blockquote {
 blockquote p {
     font-size: var(--font-size-lg);
     margin-bottom: 1em;
+    letter-spacing: -.03em;
 }
 
 blockquote:after {
@@ -273,7 +274,7 @@ sub {
 .post-title {
     font-size: var(--font-size-title);
     font-weight: normal;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
     line-height: 1.3;
     display: inline-block;
 }
