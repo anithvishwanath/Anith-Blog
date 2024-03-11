@@ -5,7 +5,7 @@ eleventyComputed:
 ---
 <article class="post-item">
     <h2 class="post-title-page">{{ title }}</h2>
-    <time class="journal-entry-time" datetime="{{ post.date }}"> {{ page.date | fullDate }} by {{ meta.author.name }} </time> 
+    <time class="journal-entry-time" datetime="{{ post.date }}"> {{ page.date | fullDate }}</time> 
     {{ content | safe }}
     <a href="/" class="back-btn">← Go back</a>
 </article>
