@@ -303,10 +303,6 @@ sub {
         margin: 1em;
     }
 
-    .navbar {
-        margin-bottom: 1.25em;
-    }
-
     .blog-container {
         display: flex;
         flex-direction: column;
