@@ -179,8 +179,14 @@ sub {
     text-align: justify;
 }
 
-img {
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    max-width: 100%;
     margin-bottom: .625em;
+    object-fit: cover;
 }
 
 .blog-footer {
@@ -190,7 +196,7 @@ img {
     font-size: var(--font-size-sm);
     color: var(--accent);
     margin: auto 0;
-    padding-top: 2.5em;
+    padding-top: 1.2em;
     border-top: 1px solid var(--text-primary);
 }
 
@@ -259,6 +265,14 @@ img {
     text-decoration: underline;
 }
 
+.post-title-page {
+    font-size: var(--font-size-title);
+    font-weight: normal;
+    letter-spacing: -0.04em;
+    line-height: 1.3;
+    display: inline-block;
+}
+
 .permalink,
 .back-btn {
     font-size: var(--font-size-sm);
@@ -288,14 +302,10 @@ img {
 
 /* ———————— MEDIA QUERIES ——————— */
 /* Phone */
-@media only screen and (min-width: 240px) and (max-width: 812px) {
+@media only screen and (min-width: 240px) and (max-width: 1024px) {
     body {
         padding: 0;
         margin: 1em;
-    }
-
-    img {
-        width: 100%;
     }
 
     .navbar {
