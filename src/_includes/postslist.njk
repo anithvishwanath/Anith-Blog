@@ -3,10 +3,10 @@
   <li>
     <div class="post-container">
       <span class="postlist-item">
-        <time class="journal-entry-responsive" datetime="{{ post.date }}">{{ post.date | fullDate }} </time>
+        <time class="journal-entry-responsive" datetime="{{ post.date }}">{{ post.date | fullDate }} by {{ meta.author.name }} </time>
         <a href="/{{ post.fileSlug }}"><h2 class="post-title"> {{ post.data.title }} </h2></a>
       </span>
-      <time class="journal-entry" datetime="{{ post.date }}"> {{ post.date | fullDate }} </time>
+      <time class="journal-entry" datetime="{{ post.date }}"> {{ post.date | fullDate }} by {{ meta.author.name }} </time>
       {{ post.templateContent | safe }}
       <a href="/{{ post.fileSlug }}" class="permalink">Permalink</a>
     </div>
