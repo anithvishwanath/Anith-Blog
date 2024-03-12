@@ -356,6 +356,10 @@ sub {
         text-align: left;
     }
 
+    .post-container:first-child {
+        margin-top: 0;
+    }
+
     .post-title {
         display: block;
         width: 100%;
