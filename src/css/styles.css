@@ -253,7 +253,8 @@ sub {
     margin-bottom: 7.5em;
 }
 
-.post-container:first-child {
+.post-container:first-child,
+.post-item {
     margin-top: 2.5em;
 }
 
@@ -337,7 +338,7 @@ sub {
         justify-content: space-between;
         margin: 0 auto;
         width: 100%;
-        margin-top: 1.2em;
+        margin-top: .625em;
         margin-bottom: 2.5em;
     }
 
@@ -356,7 +357,8 @@ sub {
         text-align: left;
     }
 
-    .post-container:first-child {
+    .post-container:first-child,
+    .post-item {
         margin-top: 0;
     }
 
