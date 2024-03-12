@@ -50,7 +50,7 @@
 
 body {
     font-family: 'GT America', sans-serif;
-    font-feature-settings: "ss01", "ss03", "tnum";
+    font-feature-settings: "ss03";
     background-color: var(--background);
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
@@ -327,6 +327,24 @@ sub {
     body {
         padding: 0;
         margin: 1em;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        grid-column: 4/10;
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 1.2em;
+        margin-bottom: 2.5em;
+    }
+
+    .nav-links li {
+        margin-left: .625em;
+        font-size: var(--font-size-lg);
+        letter-spacing: -.04em;
     }
 
     .blog-container {
