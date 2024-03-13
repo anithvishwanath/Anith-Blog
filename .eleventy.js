@@ -5,6 +5,7 @@ const markdownItAttrs = require("markdown-it-attrs");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw";
@@ -107,6 +108,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginRss);
 
   const mdOptions = {
     html: true,
