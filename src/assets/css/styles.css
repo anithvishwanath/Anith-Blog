@@ -40,6 +40,19 @@
     --font-size-sm: clamp(0.89rem, 0.1vw + 0.87rem, 0.99rem);
 }
 
+:root[dark] {
+    --background: #171717;
+
+    --text-primary: #dfdfdf;
+    --text-secondary: #a8a8a8;
+
+    --link-default: #fcfcfc;
+    --link-hover: #dadada;
+
+    --accent: #8a8a8a;
+    --border-color: #4a4a4a;
+}
+
 *,
 *:before,
 *:after {
@@ -139,7 +152,7 @@ sub {
 .nav-links {
     display: flex;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     list-style: none;
 }
 
