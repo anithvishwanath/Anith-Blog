@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var apiLink = "http://ws.audioscrobbler.com/2.0/?";
+    var apiLink = "https://ws.audioscrobbler.com/2.0/?";
     var method = "user.getrecenttracks";
     var user = "pxperlove";
     var api_key = "76141e8e654c9f354bda8423136669f9";
