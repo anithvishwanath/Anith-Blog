@@ -94,6 +94,11 @@ ul {
     margin-left: 20px;
 }
 
+li {
+    font-size: var(--font-size-md);
+    margin-bottom: .625em;
+}
+
 a[href] {
     color: var(--link-default);
     font-weight: 700;
@@ -103,6 +108,10 @@ a[href] {
 a[href]:hover {
     color: var(--link-hover);
     text-decoration: underline;
+}
+
+li a[href] {
+    font-size: var(--font-size-md);
 }
 
 blockquote:before {
@@ -158,12 +167,12 @@ sub {
 
 .nav-links li {
     margin-left: 1.2em;
-    font-size: var(--font-size-lg);
-    letter-spacing: -.04em;
 }
 
 .nav-links li a {
+    font-size: var(--font-size-lg);
     font-weight: 500;
+    letter-spacing: -.04em;
 }
 
 /* Blog container */
