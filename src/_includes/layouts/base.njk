@@ -1,20 +1,6 @@
 {% include "partials/_header.njk" %}
-<!-- <div class="blog-sidebar">
-    <div class="sidebar-content">
-        <div class="sidebar-archive">
-            <nav>
-                {% for year, yearPosts in collections.postsByYear %}
-                    <time class="sidebar-year">{{ year }}</time>
-                    {% for post in yearPosts | reverse %}
-                        <li><span class="sidebar-time"><a href="/{{ post.fileSlug }}">{{ post.date | readableDate }}</a> </span></li>
-                    {% endfor %}
-                {% endfor %}
-            </nav>
-        </div>
-    </div>
-</div> -->
 <main role="main" class="blog-content">
-    {{ content | safe }}
+        {{ content | safe }}
 </main>
 {% include "partials/_footer.njk" %}
 </div>

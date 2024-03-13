@@ -8,7 +8,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw";
-  let srcPrefix = `src/assets/`;
+  let srcPrefix = `src/assets/img/`;
   src = srcPrefix + src;
   console.log(`Generating image(s) from:  ${src}`);
   if (alt === undefined) {
@@ -17,8 +17,8 @@ async function imageShortcode(src, alt) {
   let metadata = await Image(src, {
     widths: [480, 900, 1600],
     formats: ["webp", "jpeg", "png"],
-    urlPath: "/assets/",
-    outputDir: "./_site/assets/",
+    urlPath: "/assets/img",
+    outputDir: "./_site/assets/img/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
