@@ -7,7 +7,7 @@ eleventyNavigation:
 ---
 <article class="post-item">
 <h2 class="post-title-page">{{ title }}</h2>
-<p class="post-links">Last updated: 9 Mar 2024.</p>
+<p class="post-links">Last updated: 13 Mar 2024</p>
 
 <p>This page is meant to be a snapshot of my life — my interests, goals, feelings, passions, what I am doing currently, and my future plans. 
 
@@ -15,36 +15,49 @@ Inspired by <a href="https://nownownow.com/" target="_blank">nownownow</a>.</p>
 
 <h3 class="page-section-header">What am I up to?</h3>
 <div class="page-divider"></div>
-<p>I'm preparing to move to 🇨🇦 Canada! I will be moving to Toronto very, VERY soon and most of my energy is focused toward that at the moment.</p>
+<p>I am <em>still</em> preparing to move to 🇨🇦 Canada! I will be moving to Toronto very, VERY soon and most of my energy is focused toward that at the moment. That, and this blog!</p>
 
-<p>I am also looking for a job and have been finishing up my design <a href="https://anith.design" target="_blank">folio</a>. (A portfolio is never truly "finished", but I think I have definitely reached a stopping point for now. 🎉)</p>
+<p>I am also actively looking for a job and have been finishing up my design <a href="https://anith.design" target="_blank">folio</a>. (A portfolio is never truly "finished", but I think I have definitely reached a stopping point for now. 🎉)</p>
 
 <h3 class="page-section-header">Last photo I took</h3>
 <div class="page-divider"></div>
 <div class="img-container">
-    {% image "AA5935AA-B887-4E5C-BC0E-99B5BAA19B0D_1_105_c.jpeg", "Photo of my eye from an old camcorder" %}
+    {% image "pkmn-gba.jpeg", "Photo showing Magikarp from Pokemon Ruby on a Gameboy Advance SP" %}
 </div>
-<p> I took this photo today (9 Mar 2024) — a photo (of a photo) of my eye; I found this photo on my old Sony camcorder while doing some spring cleaning. Good memories! I don't know why I took so many photos of my eyes HAHA.</p>
+<p> I found my old Gameboy while doing some cleaning today, and I was surprised to see that my old Pokemon Ruby save file STILL works. I found this Pokedex entry for Magikarp a tad funny too.</p>
 
 <h3 class="page-section-header">Reading</h3>
 <div class="page-divider"></div>
-<p>I've been reading a lot of books over the last 3 months. These are my current reads: </p>
+<p>I've been reading a lot of books over the last 3 months. This is my current read: </p>
 <ul>
-<li><p>Heretics of Dune, by Frank Herbert</p></li>
-<li><p>Looking for Alaska, by John Green</p></li>
-<li><p>The Daily Stoic, by Ryan Holiday</p></li>
+<li><p>Chapterhouse: Dune, by Frank Herbert</p></li>
 </ul>
 
-<p>The most recent series I've read is the Farseer trilogy, by Robin Hobb, and I found it absolutely enjoyable.</p>
+<p>I am very excited to finish reading Dune! I really loved Heretics, and I can't wait to see how Chapterhouse ends.</p>
 
 <h3 class="page-section-header">Listening to</h3>
 <div class="page-divider"></div>
-<p>I made a Spring playlist today — so it's been mostly that. Playlist below!</p>
-<iframe style="border-radius:12px; margin-bottom: .625em" src="https://open.spotify.com/embed/playlist/1loEBzoxRBB5aOSX4IsPmk?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p>I managed to link my <a href="https://last.fm/user/pxperlove" target="_blank">last.fm</a> listening data to my blog through its API. That means this section will always be accurate! (The listened time is showing UTC time though, and I may get around to fixing it at some point later.)
+<div class="now-playing-container">
+    <div class="album-art">
+        <img id="album-artwork" class="alb-art" alt="album artwork"/>
+    </div>
+    <div class="row">
+        <div class="labels">
+            <span class="row-label">Track</span>
+            <span id="track-name" class="row-data"></span>
+            <span class="row-label">Artist</span>
+            <span id="artist-name" class="row-data"></span>
+            <!-- <h3 id="status"></h3> -->
+            <span class="row-label">Listened</span>
+            <span id="listen-date" class="row-data"></span>
+        </div>
+    </div>
+</div>
 
 <h3 class="page-section-header">Watching</h3>
 <div class="page-divider"></div>
-<p>Nothing really. I haven't watched anything on Netflix (or other streaming services) in a LONG time.</p>
+<p>The YouTube algorithm overlord has begun recommending me Lego videos two days ago, and I am amazed by the creativity and the engineering that goes into some of the builds that people make. Of note, <a href="https://youtu.be/aPO5JaShu2U?si=ahjirimiFXdqyqUB" target="_blank" rel="nofollow">here</a> is a video that is quite amusing.</p>
 
 <h3 class="page-section-header">The Future</h3>
 <div class="page-divider"></div>
@@ -57,3 +70,4 @@ Inspired by <a href="https://nownownow.com/" target="_blank">nownownow</a>.</p>
 <li><p>I think I may also add a /log page at some point to my blog to keep track of all media I've consumed. We shall see!</p></li>
 </ul>
 </article>
+<script src="../../assets/js/now-playing.js" defer></script>
