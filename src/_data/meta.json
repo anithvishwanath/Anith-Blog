@@ -4,9 +4,10 @@
     "language": "en",
     "description": "Anith Vishwanath is a multidisciplinary designer who explores creativity, compassion, and emotional expression through his writing.",
     "feed": {
-        "subtitle": "",
+        "subtitle": "Anith Vishwanath is a multidisciplinary designer who explores creativity, compassion, and emotional expression through his writing.",
         "filename": "feed.xml",
         "path": "/feed/feed.xml",
+        "url": "https://anith.blog/feed/feed.xml",
         "id": "https://anith.blog/"
     },
     "jsonfeed": {
@@ -15,6 +16,6 @@
     },
     "author": {
         "name": "Anith Vishwanath",
-        "email": "anithvis@gmail.com"
+        "email": "hello@anith.design"
     }
 }
