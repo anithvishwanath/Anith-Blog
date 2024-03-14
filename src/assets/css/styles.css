@@ -419,7 +419,6 @@ sub {
     display: block;
     margin-bottom: .75em;
     font-size: var(--font-size-md);
-    overflow: clip;
 }
 
 .row-data:last-child {
