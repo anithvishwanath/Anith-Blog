@@ -6,6 +6,7 @@ const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const lucideIcons = require("@grimlink/eleventy-plugin-lucide-icons");
 
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw";
@@ -109,6 +110,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(lucideIcons);
 
   const mdOptions = {
     html: true,

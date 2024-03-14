@@ -1,13 +1,14 @@
 ---
 layout: layouts/base.njk
 title: Now
+date: 2024-03-14
 eleventyNavigation:
     key: Now
     order: 2
 ---
 <article class="post-item">
 <h2 class="post-title-page">{{ title }}</h2>
-<p class="post-links">Last updated: 13 Mar 2024</p>
+<p class="post-links">Last updated on {{ page.date | fullDate }}</p>
 
 <p>This page is meant to be a snapshot of my life — my interests, goals, feelings, passions, what I am doing currently, and my future plans. 
 
@@ -37,7 +38,8 @@ Inspired by <a href="https://nownownow.com/" target="_blank">nownownow</a>.</p>
 
 <h3 class="page-section-header">Listening to</h3>
 <div class="page-divider"></div>
-<p>I managed to link my <a href="https://last.fm/user/pxperlove" target="_blank">last.fm</a> listening data to my blog through its API. That means this section will always be up-to-date and accurate! (The 'Listened' time is in UTC though, and I may get around to fixing it at some point.)
+<p>I managed to link my <a href="https://last.fm/user/pxperlove" target="_blank">last.fm</a> listening data to my blog through its API. That means this section will always be up-to-date and accurate!</p>
+<p><strong>Update:</strong> The time should now show your local time zone! 🎉</p>
 <div class="now-playing-container">
     <div class="album-art">
         <img id="album-artwork" class="alb-art" alt="album artwork"/>

@@ -9,7 +9,6 @@
         <link rel="icon" href="https://fav.farm/🌱" />
         {% include "partials/_meta.njk" %}
         <link rel="stylesheet" href="../assets/css/styles.css">
-        <script src="../assets/js/main.js"></script>
     </head>
     <body>
         <div class="blog-container">
@@ -21,6 +20,7 @@
                 {%- for entry in collections.all | eleventyNavigation %}
                 <li class="nav-link{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{entry.url | url}}">{{ entry.title }}</a></li>
                 {%- endfor %}
+                <!-- <button id="mode-toggle" class="mode-toggle">L/D</button> -->
             </ul>
         </nav>
     
