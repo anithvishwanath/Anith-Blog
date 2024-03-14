@@ -44,7 +44,8 @@
     --font-size-sm: clamp(0.89rem, 0.1vw + 0.87rem, 0.99rem);
 }
 
-:root[dark] {
+@media (prefers-color-scheme: dark) {
+    :root {
     --background-default: #171717;
     --background-paper: #272829;
 
@@ -59,6 +60,7 @@
 
     --button-default: #171717;
     --button-hover: #2a2a2a;
+    }
 }
 
 *,
