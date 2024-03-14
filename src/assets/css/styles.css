@@ -407,7 +407,7 @@ sub {
 .row {
     flex: 2;
     max-width: 100%;
-    align-self:center ;
+    align-self:center;
 }
 
 .row-label {
@@ -470,6 +470,10 @@ sub {
     .post-title {
         display: block;
         width: 100%;
+    }
+
+    .album-art {
+        align-self: center;
     }
 
     .album-art img {
