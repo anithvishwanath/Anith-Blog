@@ -40,11 +40,34 @@ document.addEventListener("DOMContentLoaded", function () {
         // document.getElementById("listen-date").textContent += date;
 
         if (isNowPlaying) {
-            statusElement.textContent += "Now playing on Spotify";
+            statusElement.textContent += "🎶 Now playing on Spotify";
         } else {
-            var date = data.recenttracks.track[0].date["#text"];
-            console.log(date);
-            statusElement.textContent = date;
+            // var date = data.recenttracks.track[0].date["uts"];
+            // console.log(date);
+            //statusElement.textContent = date;
+            var date = parseInt(data.recenttracks.track[0].date.uts);
+            var localDate = new Date(date * 1000);
+
+            var dateTimeOptions = {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                timeZoneName: "short"
+            }
+
+            var localDateTimeString = localDate.toLocaleString("en-CA", dateTimeOptions);
+
+            // var testString = {{ listenDateTime }};
+
+            // Manually capitalize "a.m." and "p.m."
+            localDateTimeString = localDateTimeString.replace(/\ba\.m\./gi, "am").replace(/\bp\.m\./gi, "pm");
+
+            // Remove space between time and "AM/PM" indicator
+            localDateTimeString = localDateTimeString.replace(/\s(am|pm)/gi, "$1");
+
+            statusElement.textContent = localDateTimeString;
         }
     }
 
