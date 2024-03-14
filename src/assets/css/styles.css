@@ -389,7 +389,7 @@ sub {
 
 .album-art {
     flex: 1;
-    align-self: center;
+    align-self: baseline;
     max-width: fit-content;
 }
 
@@ -472,8 +472,8 @@ sub {
     }
 
     .album-art img {
-        width: 136px;
-        height: 136px;
+        width: 152px;
+        height: 152px;
         border-radius: 0.5em;
     }
 
