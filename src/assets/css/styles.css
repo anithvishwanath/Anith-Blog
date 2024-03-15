@@ -225,7 +225,7 @@ sub {
     left: 3px;
     top: 3px;
     border-radius: 50%;
-    transition: transform 0.2s linear;
+    /* transition: transform 0.2s linear; */
 }
 
 .toggle-checkbox:checked + .checkbox-label .mode-toggle-switch {
