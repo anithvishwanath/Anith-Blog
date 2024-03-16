@@ -412,7 +412,7 @@ sub {
     flex-direction: row;
     justify-content: start;
     align-content: start;
-    gap: 1.2em;
+    gap: .875em;
     padding: .625em;
     border: 1px solid var(--border-color);
     border-radius: .625em;
@@ -423,7 +423,7 @@ sub {
 
 .album-art {
     flex: 1;
-    align-self: baseline;
+    align-self: self-start;
     max-width: fit-content;
 }
 
@@ -437,13 +437,31 @@ sub {
 }
 
 .row {
+    display: flex;
+    flex-direction: column;
     flex: 2;
     max-width: 100%;
-    align-self: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
+.track-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;   
+}
+
+.listen-data-container {
+    margin-top: auto;
+}
+
+
 .row-label {
-    display: block;
+    display: none;
     font-weight: 600;
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
@@ -457,6 +475,27 @@ sub {
 
 .row-data:last-child {
     margin-bottom: 0;
+}
+
+.track {
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.125em;
+    display: block;
+    text-wrap: balance;
+}
+
+.artist {
+    font-weight: normal;
+    letter-spacing: -0.02em;
+}
+
+.time {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    letter-spacing: -0.01em;
 }
 
 /* ———————— MEDIA QUERIES ——————— */
@@ -504,23 +543,73 @@ sub {
         width: 100%;
     }
 
+    .now-playing-container {
+        gap: 0.625em;
+    }
+
     .album-art {
         align-self: center;
+        width: 100%;
+        height: 100%;
     }
 
     .album-art img {
-        width: 152px;
-        height: 152px;
+        width: 120px;
+        height: 120px;
         border-radius: 0.5em;
     }
 
+    .row {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+
+    .track-data-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        margin-right: 20px;        
+    }
+
+    .listen-data-container {
+        margin-top: auto;
+    }
+
     .row-label {
-        display: block;
+        display: none;
         font-weight: 600;
     }
 
     .row-data {
         display: block;
-        margin-bottom: .625em;
+        margin: 0;
+    }
+
+    .track {
+        font-weight: 600;
+        font-size: var(--font-size-lg);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.125em;
+        display: block;
+        text-wrap: balance;
+    }
+
+    .artist {
+        font-weight: normal;
+        letter-spacing: -0.02em;
+    }
+
+    .time {
+        font-size: var(--font-size-sm);
+        color: var(--text-secondary);
+        letter-spacing: -0.01em;
     }
 }
