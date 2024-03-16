@@ -428,8 +428,8 @@ sub {
 }
 
 .album-art img {
-    width: 160px;
-    height: 160px;
+    width: 136px;
+    height: 136px;
     max-height: 100%;
     border-radius: 0.75em;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .1),
