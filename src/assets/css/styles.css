@@ -484,21 +484,19 @@ sub {
     font-size: var(--font-size-lg);
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: 0.063em;
+    margin-bottom: 0.125em;
     display: block;
     text-wrap: balance;
 }
 
 .artist {
     font-weight: normal;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .time {
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
-    letter-spacing: -0.01em;
-    margin-bottom: .625em;
 }
 
 /* ———————— MEDIA QUERIES ——————— */
@@ -592,6 +590,6 @@ sub {
     }
 
     .track {
-        margin-bottom: 0.063em;
+        margin-bottom: 0.125em;
     }
 }
