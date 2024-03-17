@@ -558,6 +558,8 @@ sub {
         width: 120px;
         height: 120px;
         border-radius: 0.5em;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1),
+        0 0 8px 0 rgba(0, 0, 0, .1);
     }
 
     .row {
