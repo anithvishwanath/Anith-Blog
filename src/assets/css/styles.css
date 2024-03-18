@@ -98,6 +98,7 @@ p {
     font-size: var(--font-size-md);
     line-height: 1.5;
     margin-bottom: 1em;
+    letter-spacing: -0.01em;
 }
 
 ul {
@@ -305,9 +306,9 @@ sub {
     margin-bottom: 0.25em;
 }
 
-.blog-footer a {
+.blog-footer a[href] {
     font-size: var(--font-size-sm);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Posts */
