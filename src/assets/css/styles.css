@@ -594,5 +594,6 @@ sub {
 
     .track {
         text-wrap: balance;
+        margin-bottom: 0.125em;
     }
 }
