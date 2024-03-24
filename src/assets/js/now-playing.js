@@ -49,8 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
             var localDate = new Date(date * 1000);
 
             var dateTimeOptions = {
+                weekday: "long",
                 day: "numeric",
-                month: "short",
+                month: "long",
                 year: "numeric",
                 hour: "2-digit",
                 minute: "2-digit",
