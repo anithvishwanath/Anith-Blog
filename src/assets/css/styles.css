@@ -416,7 +416,7 @@ sub {
     padding: 0.625em;
     gap: .875em;
     border: 1px solid var(--border-color);
-    border-radius: .625em;
+    border-radius: 0.625em;
     overflow: clip;
     width: 100%;
     background: var(--background-paper);
@@ -484,7 +484,7 @@ sub {
     font-size: var(--font-size-lg);
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: 0.125em;
+    margin-bottom: 0.031em;
     display: block;
     text-wrap: balance;
 }
@@ -594,6 +594,6 @@ sub {
 
     .track {
         text-wrap: balance;
-        margin-bottom: 0.125em;
+        margin-bottom: 0.031em;
     }
 }
