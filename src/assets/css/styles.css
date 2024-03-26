@@ -484,7 +484,7 @@ sub {
     font-size: var(--font-size-lg);
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: 0.063em;
+    margin-bottom: 0.094em;
     display: block;
     text-wrap: balance;
 }
@@ -594,6 +594,6 @@ sub {
 
     .track {
         text-wrap: balance;
-        margin-bottom: 0.063em;
+        margin-bottom: 0.094em;
     }
 }
