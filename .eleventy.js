@@ -80,13 +80,13 @@ function extractFirstImage(doc) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("LLLL dd");
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("LL-dd");
     // return new Date(dateObj).toDateString();
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("fullDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).setLocale('en').toLocaleString(DateTime.DATE_HUGE);
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).setLocale('en-CA').toLocaleString(DateTime.DATE_HUGE);
   });
 
   eleventyConfig.addFilter("year", (dateObj) => {
@@ -100,6 +100,14 @@ module.exports = function (eleventyConfig) {
       .toPairs()
       .reverse()
       .value();
+  });
+
+  /* Post sorting in the sidebar */
+  eleventyConfig.addCollection("allPostsSorted", function(collectionApi) {
+    return collectionApi.getFilteredByTag("posts").map(post => {
+      post.data.year = post.date.getFullYear();
+      return post;
+    }).sort((a, b) => b.date - a.date);
   });
 
   eleventyConfig.addShortcode("first_image", (post) => extractFirstImage(post));
