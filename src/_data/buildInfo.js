@@ -16,6 +16,8 @@ module.exports = () => {
       .execSync('git rev-parse --short HEAD')
       .toString().trim();
 
+  console.log(latestGitCommitHash);
+
   return {
     time: {
       raw: now.toISOString(),
