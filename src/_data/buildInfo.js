@@ -7,7 +7,7 @@ module.exports = () => {
   const timeZone = 'America/Toronto';
   const buildTime = new Intl.DateTimeFormat('en-CA', {
     dateStyle: 'short',
-    timeStyle: 'short',
+    timeStyle: 'long',
     timeZone,
   }).format(now);
 
@@ -20,7 +20,7 @@ module.exports = () => {
     time: {
       raw: now.toISOString(),
       // formatted: `${buildTime}`,
-      formatted: `${buildTime} EST`,
+      formatted: `${buildTime}`,
       version: packageJson.version,
       hash: latestGitCommitHash,
     },
