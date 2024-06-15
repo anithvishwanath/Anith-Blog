@@ -3,27 +3,26 @@
 const packageJson = require('../../package.json');
 
 module.exports = () => {
-    const now = new Date();
-    const timeZone = 'America/Toronto';
-    const timeZoneAbbreviation = 'EST'
-    const buildTime = new Intl.DateTimeFormat('en-CA', {
-      dateStyle: 'short',
-      timeStyle: 'short',
-      timeZoneAbbreviation,
-    }).format(now);
+  const now = new Date();
+  const timeZone = 'EST';
+  const buildTime = new Intl.DateTimeFormat('en-CA', {
+    dateStyle: 'short',
+    timeStyle: 'short',
+    timeZone,
+  }).format(now);
 
-    const latestGitCommitHash =
-    require('child_process').exec('git rev-parse HEAD', function(err, stdout) {
-        console.log('Last commit hash on this branch is:', stdout);
-    });
-  
-    return {
-      time: {
-        raw: now.toISOString(),
-        // formatted: `${buildTime}`,
-        formatted: `${buildTime} ${timeZoneAbbreviation}`,
-        version: packageJson.version,
-        hash: latestGitCommitHash,
-      },
-    };
+  const latestGitCommitHash =
+    require('child_process')
+      .execSync('git rev-parse --short HEAD')
+      .toString().trim();
+
+  return {
+    time: {
+      raw: now.toISOString(),
+      // formatted: `${buildTime}`,
+      formatted: `${buildTime} ${timeZone}`,
+      version: packageJson.version,
+      hash: latestGitCommitHash,
+    },
   };
+};
