@@ -38,17 +38,20 @@
     --accent: #E5E5E5;
     --border-color: #999;
 
-    /* 
-    --font-size-title: clamp(1.42rem, 0.63vw + 1.3rem, 2.05rem);
-    --font-size-lg: clamp(1.27rem, 0.44vw + 1.18rem, 1.71rem);
-    --font-size-md: clamp(1rem, 0.19vw + 0.96rem, 1.19rem);
-    --font-size-sm: clamp(0.89rem, 0.1vw + 0.87rem, 0.99rem); 
-    */
+    /* --font-size-sm: clamp(0.82rem, 0.01vi + 0.82rem, 0.83rem);
+    --font-size-md: clamp(0.88rem, 0.13vi + 0.85rem, 1rem);
+    --font-size-lg: clamp(0.93rem, 0.27vi + 0.88rem, 1.2rem);
+    --font-size-title: clamp(1rem, 0.44vi + 0.91rem, 1.44rem); */
 
-    --font-size-title: 1rem;
+    --font-size-sm: clamp(0.89rem, -0.06vi + 0.9rem, 0.83rem);
+    --font-size-md: clamp(1rem, 0vi + 1rem, 1rem);
+    --font-size-lg: clamp(1.13rem, 0.07vi + 1.11rem, 1.2rem);
+    --font-size-title: clamp(1.27rem, 0.17vi + 1.23rem, 1.44rem);
+
+    /* --font-size-title: 1rem;
     --font-size-lg: 1rem;
     --font-size-md: 0.875rem;
-    --font-size-sm: 0.75rem;
+    --font-size-sm: 0.75rem; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -242,6 +245,7 @@ sub {
 .blog-sidebar-lt a {
     list-style-type: none;
     margin: 0;
+    font-size: var(--font-size-sm);
 }
 
 .journal-entry-container {
@@ -265,7 +269,7 @@ sub {
 .journal-entry-title {
     display: flex;
     align-items: center;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     margin-bottom: 0.25em;
 }
 
@@ -274,7 +278,7 @@ sub {
     align-items: center;
     font-weight: 500;
     color: var(--text-primary);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
 }
 
 .journal-entry-title-date {
@@ -319,6 +323,10 @@ sub {
 }
 
 /* Blog Footer */
+.mobile-footer {
+    display: none;
+}
+
 .blog-footer {
     margin-top: auto;
     background-color: var(--accent);
@@ -378,12 +386,19 @@ sub {
 
 .post-container {
     margin-top: 7.5em;
-    margin-bottom: 7.5em;
 }
 
 .post-container:first-child,
 .post-item {
     margin-top: 0;
+}
+
+.post-entries {
+    margin-bottom: 7.5em;
+}
+
+.post-entries:last-child {
+    margin-bottom: 0;
 }
 
 .postlist {
@@ -462,7 +477,7 @@ sub {
     border-radius: 0.625em;
     overflow: clip;
     width: 100%;
-    background: var(--background-default);
+    background: var(--accent);
 }
 
 .album-art {
@@ -548,11 +563,15 @@ sub {
 /* Phone */
 @media only screen and (max-width: 1024px) {
     body {
-        padding: 0;
-        margin: 1em;
         border: 0;
+        padding: 0;
         height: auto;
         overflow: visible;
+        background-color: var(--background-paper);
+    }
+
+    p {
+        text-align: left;
     }
 
     .navbar {
@@ -580,23 +599,35 @@ sub {
     }
 
     .blog-container {
-        display: block;
+        display: flex;
         width: 100%;
         height: auto;
+        padding: 1em;
+        flex-direction: column;
     }
 
     .journal-entry-container {
         display: none;
     }
 
+    .blog-sidebar-lt {
+        order: 1;
+        background-color: var(--background-paper);
+    }
+
     .blog-sidebar-rt {
-        background-color: var(--background-default);
+        order: 2;
+        background-color: var(--background-paper);
         padding: 0;
     }
 
     .post-container:first-child,
     .post-item {
         margin-top: 0;
+    }
+
+    .post-entries {
+        margin-bottom: 5em;
     }
 
     .post-title {
@@ -606,7 +637,7 @@ sub {
 
     .now-playing-container {
         gap: 0.625em;
-        background: var(--background-paper);
+        background: var(--accent);
     }
 
     .album-art {
@@ -655,28 +686,45 @@ sub {
     }
 
     .blog-footer {
-        margin: 0;
-        padding: 0;
-        border-top: 1px solid var(--border-color);
-        background-color: var(--background-default);
         display: none;
     }
 
-    .footer-list {
+    .mobile-footer {
+        display: block;
+        order: 3;
+        margin-top: auto;
+        background-color: var(--accent);
+        color: var(--text-primary);
+        font-size: var(--font-size-sm);
+        margin-top: 2.5em;
+        padding: 1em;
+    }
+
+    .mobile-footer a[href] {
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+    }
+
+    .mobile-footer-title {
+        margin-bottom: 1.25em;
+        font-weight: normal;
+    }
+
+    .mobile-footer-list {
         list-style-type: none;
         font-size: var(--font-size-sm);
         margin: 0;
     }
 
-    .footer-list li {
-        margin-bottom: 0.25em;
+    .mobile-footer-list li {
+        margin-bottom: 0.5em;
     }
 
-    .footer-list li:last-child {
+    .mobile-footer-list li:last-child {
         margin-top: 1em;
     }
 
-    .footer-commit {
+    .mobile-footer-commit {
         color: var(--text-secondary);
     }
 }
