@@ -4,31 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ title or meta.title }} — anith.blog</title>
-        <meta name="generator" content="Eleventy" />
+        <meta name="generator" content="Eleventy"/>
         <meta name="description" content="{{ meta.description }}"/>
-        <link rel="icon" href="https://fav.farm/🌱" />
-        {% include "partials/_meta.njk" %}
+        <link rel="icon" href="https://fav.farm/🌱"/> {% include "partials/_meta.njk" %}
         <link rel="stylesheet" href="../assets/css/styles.css">
     </head>
     <body>
         <div class="blog-container">
-        <nav class="navbar" role="navigation">
-            <header class="blog-header" role="banner">
-                <h1 class="page-title"><a href="{{ '/' | url }}">{{ meta.title }}</a></h1>
-            </header>
-            <ul class="nav-links">
-                {%- for entry in collections.all | eleventyNavigation %}
-                <li class="nav-link{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{entry.url | url}}">{{ entry.title }}</a></li>
-                {%- endfor %}
-                <!-- <button id="mode-toggle" class="mode-toggle">L/D</button> -->
-                <!-- <div>
-                    <input type="checkbox" class="toggle-checkbox" id="mode-toggle">
-                    <label for="mode-toggle" class="checkbox-label">
-                        {% lucide "sun", { "size": "16" } %}
-                        {% lucide "moon", { "size": "16" } %}
-                        <span class="mode-toggle-switch"></span>
-                    </label>
-                </div> -->
-            </ul>
-        </nav>
-    
+            <div class="blog-sidebar-lt">
+                <nav class="navbar" role="navigation">
+                    <header class="blog-header" role="banner">
+                        <h1 class="blog-title">
+                            <a href="{{ '/' | url }}">{{ meta.title }}</a>
+                        </h1>
+                    </header>
+                    <ul class="nav-links">
+                        {%- for entry in collections.all | eleventyNavigation %}
+                            <li class="nav-link{% if entry.url == page.url %} nav-item-active{% endif %}">
+                                <div class="nav-link-wrapper">
+                                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                                </div>
+                            </li>
+                        {%- endfor %}
+                    </ul>
+                </nav>
+                {% for year, yearPosts in collections.postsByYear %}
+                    <div class="journal-entry-container">
+                        <time class="sidebar-year">{{ year }}</time>
+                        {% for post in yearPosts | reverse %}
+                            <div class="journal-entry-title">
+                                <span class="journal-entry-title-date">{{ post.date | readableDate }}</span>
+                                <a href="/{{ post.fileSlug }}">
+                                    <span>{{ post.data.title }}</span>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+                {% include "partials/_footer.njk" %}
+            </div>
+        </body>
+    </body>
+</html></body></html>
