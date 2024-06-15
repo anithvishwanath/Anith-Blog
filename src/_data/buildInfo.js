@@ -4,7 +4,7 @@ const packageJson = require('../../package.json');
 
 module.exports = () => {
   const now = new Date();
-  const timeZone = 'EST';
+  const timeZone = 'America/Toronto';
   const buildTime = new Intl.DateTimeFormat('en-CA', {
     dateStyle: 'short',
     timeStyle: 'short',
@@ -13,7 +13,7 @@ module.exports = () => {
 
   const latestGitCommitHash =
     require('child_process')
-      .execSync('git rev-parse --short HEAD')
+      .execSync('git rev-parse HEAD')
       .toString().trim();
 
   console.log(latestGitCommitHash);
@@ -22,7 +22,7 @@ module.exports = () => {
     time: {
       raw: now.toISOString(),
       // formatted: `${buildTime}`,
-      formatted: `${buildTime} ${timeZone}`,
+      formatted: `${buildTime} (Local Time)`,
       version: packageJson.version,
       hash: latestGitCommitHash,
     },
