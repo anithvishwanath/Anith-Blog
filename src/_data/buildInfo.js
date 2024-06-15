@@ -13,16 +13,14 @@ module.exports = () => {
 
   const latestGitCommitHash =
     require('child_process')
-      .execSync('git rev-parse HEAD')
+      .execSync('git rev-parse --short HEAD')
       .toString().trim();
-
-  console.log(latestGitCommitHash);
 
   return {
     time: {
       raw: now.toISOString(),
       // formatted: `${buildTime}`,
-      formatted: `${buildTime} (Local Time)`,
+      formatted: `${buildTime} EST`,
       version: packageJson.version,
       hash: latestGitCommitHash,
     },

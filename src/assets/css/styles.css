@@ -351,6 +351,10 @@ sub {
     margin-top: 1em;
 }
 
+.footer-commit {
+    color: var(--text-secondary);
+}
+
 /* Posts */
 .journal-entry {
     color: var(--text-secondary);
