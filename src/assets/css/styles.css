@@ -599,9 +599,9 @@ sub {
         letter-spacing: -.04em;
     }
 
-    /* .nav-link:not(:last-child):after {
+    .nav-link:not(:last-child):after {
         font-size: unset;
-    } */
+    }
 
     .blog-container {
         display: flex;
