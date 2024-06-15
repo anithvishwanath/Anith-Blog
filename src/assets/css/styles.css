@@ -38,10 +38,15 @@
     --accent: #E5E5E5;
     --border-color: #999;
 
-    --font-size-sm: clamp(0.82rem, 0.01vi + 0.82rem, 0.83rem);
+    /* --font-size-sm: clamp(0.82rem, 0.01vi + 0.82rem, 0.83rem);
     --font-size-md: clamp(0.88rem, 0.13vi + 0.85rem, 1rem);
     --font-size-lg: clamp(0.93rem, 0.27vi + 0.88rem, 1.2rem);
-    --font-size-title: clamp(1rem, 0.44vi + 0.91rem, 1.44rem);
+    --font-size-title: clamp(1rem, 0.44vi + 0.91rem, 1.44rem); */
+
+    --font-size-sm: clamp(0.89rem, -0.06vi + 0.9rem, 0.83rem);
+    --font-size-md: clamp(1rem, 0vi + 1rem, 1rem);
+    --font-size-lg: clamp(1.13rem, 0.07vi + 1.11rem, 1.2rem);
+    --font-size-title: clamp(1.27rem, 0.17vi + 1.23rem, 1.44rem);
 
     /* --font-size-title: 1rem;
     --font-size-lg: 1rem;
@@ -240,6 +245,7 @@ sub {
 .blog-sidebar-lt a {
     list-style-type: none;
     margin: 0;
+    font-size: var(--font-size-sm);
 }
 
 .journal-entry-container {
@@ -263,7 +269,7 @@ sub {
 .journal-entry-title {
     display: flex;
     align-items: center;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     margin-bottom: 0.25em;
 }
 
@@ -272,7 +278,7 @@ sub {
     align-items: center;
     font-weight: 500;
     color: var(--text-primary);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
 }
 
 .journal-entry-title-date {
