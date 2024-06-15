@@ -214,6 +214,7 @@ sub {
 .nav-link:not(:last-child):after {
     content: ", ";
     margin-right: 0.25em;
+    font-size: medium;
 }
 
 /* Blog container */
@@ -596,6 +597,10 @@ sub {
     .nav-links li {
         font-size: var(--font-size-lg);
         letter-spacing: -.04em;
+    }
+
+    .nav-link:not(:last-child):after {
+        font-size: unset;
     }
 
     .blog-container {
