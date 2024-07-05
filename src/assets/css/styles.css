@@ -26,10 +26,10 @@
     --font-size-lg: clamp(0.93rem, 0.27vi + 0.88rem, 1.2rem);
     --font-size-title: clamp(1rem, 0.44vi + 0.91rem, 1.44rem); */
 
-    --font-size-sm: clamp(1rem, 0.07vi + 0.79rem, 0.84rem);
-    --font-size-md: clamp(1rem, 0.21vi + 0.96rem, 1.13rem);
-    --font-size-lg: clamp(1.25rem, 0.42vi + 1.17rem, 1.5rem);
-    --font-size-title: clamp(1.56rem, 0.73vi + 1.42rem, 2rem);
+    --font-size-sm: clamp(0.9rem, 0.06vi + 0.89rem, 0.94rem);
+    --font-size-md: clamp(1.13rem, 0.21vi + 1.08rem, 1.25rem);
+    --font-size-lg: clamp(1.41rem, 0.43vi + 1.32rem, 1.67rem);
+    --font-size-title: clamp(1.76rem, 0.77vi + 1.6rem, 2.22rem);
 
     /* --font-size-sm: 1rem;
     --font-size-md: 1.125rem;
@@ -104,6 +104,10 @@ em {
     font-style: italic;
 }
 
+strong {
+    font-weight: 700;
+}
+
 ul {
     margin-left: 1.25em;
 }
@@ -124,7 +128,7 @@ a[href]:hover {
 }
 
 li a[href] {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
 }
 
 blockquote:before {
@@ -179,8 +183,7 @@ sub {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 6em;
-    margin-bottom: 4em;
+    margin: 6em 0;
 }
 
 .nav-links {
@@ -305,7 +308,7 @@ sub {
     color: var(--text-primary);
     font-size: var(--font-size-sm);
     padding-top: 6em;
-    padding-bottom: 24px;
+    padding-bottom: 1.25em;
 }
 
 .blog-footer a[href] {
@@ -349,7 +352,7 @@ sub {
 
 .journal-entry-time {
     color: var(--text-secondary);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     margin-top: 0.15em;
     margin-bottom: 1em;
     display: block;
@@ -420,10 +423,9 @@ sub {
 
 .permalink,
 .back-btn {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     color: var(--text-secondary) !important;
     text-decoration: none;
-    text-transform: lowercase;
     display: block;
     margin: 0;
     font-weight: 500 !important;
@@ -432,7 +434,7 @@ sub {
 /* Individual post */
 .post-links {
     color: var(--text-secondary);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
 }
 
 .post-links a {
@@ -462,11 +464,10 @@ sub {
 }
 
 .album-art img {
-    width: 104px;
-    height: 104px;
-    max-height: 100%;
+    width: 120px;
+    height: 120px;
     border-radius: 0.5em;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1),
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1),
         0 0 15px 0 rgba(0, 0, 0, .1);
 }
 
@@ -479,7 +480,7 @@ sub {
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
-    max-height: 104px;
+    max-height: 100%;
 }
 
 .track-data-container {
@@ -511,20 +512,20 @@ sub {
 
 .track {
     font-weight: 600;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif;
     font-size: var(--font-size-lg);
     line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin-bottom: 0.094em;
+    letter-spacing: -0.03em;
+    /* margin-bottom: 0.094em; */
     display: block;
     text-wrap: balance;
 }
 
 .artist {
-    font-weight: 400;
+    font-weight: 500;
     font-size: var(--font-size-md);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: -0.01em;
+    font-family: sans-serif;
+    letter-spacing: -0.02em;
     vertical-align: middle;
     line-height: 1.3;
 }
@@ -532,7 +533,10 @@ sub {
 .time {
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif;
+    letter-spacing: -0.01em;
+    padding-top: 1.2em;
+    padding-bottom: 0.2em;
 }
 
 /* ———————— MEDIA QUERIES ——————— */
@@ -615,15 +619,12 @@ sub {
 
     .now-playing-container {
         gap: 0.625em;
-    }
-
-    .album-art {
-        width: 100%;
-        height: 100%;
+        display: flex;
     }
 
     .album-art img {
-        border-radius: 0.5em;
+        width: 96px;
+        height: 96px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1),
             0 0 8px 0 rgba(0, 0, 0, .1);
     }
@@ -636,6 +637,7 @@ sub {
         align-items: flex-start;
         flex: 1 0 0;
         align-self: stretch;
+        max-height: 100%;
     }
 
     .track-data-container {
@@ -644,7 +646,6 @@ sub {
         align-items: flex-start;
         flex: 1 0 0;
         align-self: stretch;
-        margin-right: 20px;
     }
 
     .listen-data-container {
@@ -658,6 +659,51 @@ sub {
 
     .track {
         text-wrap: balance;
-        margin-bottom: 0.094em;
+        font-size: var(--font-size-lg);
+        margin-bottom: 0.05em;
+    }
+
+    .artist {
+        font-size: var(--font-size-md);
+    }
+
+    .time {
+        font-size: var(--font-size-sm);
+    }
+
+    .blog-footer {
+        font-size: var(--font-size-md);
+        padding-bottom: 0.625em;
+    }
+    
+    .blog-footer a[href] {
+        font-size: var(--font-size-md);
+        font-weight: 600;
+    }
+    
+    .blog-footer-title {
+        margin-bottom: 1.25em;
+        font-weight: 400;
+        color: var(--text-secondary);
+        letter-spacing: -.02em;
+    }
+    
+    .footer-list {
+        list-style-type: none;
+        font-size: var(--font-size-md);
+        margin: 0;
+    }
+    
+    .footer-list li {
+        margin-bottom: 0.25em;
+    }
+    
+    .footer-list li:last-child {
+        margin-top: 1em;
+    }
+    
+    .footer-commit {
+        font-size: var(--font-size-sm);
+        color: var(--text-secondary);
     }
 }
