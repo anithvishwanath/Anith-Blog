@@ -5,8 +5,8 @@ const packageJson = require('../../package.json');
 module.exports = () => {
   const now = new Date();
   const timeZone = 'America/Toronto';
-  const buildTime = new Intl.DateTimeFormat('en-CA', {
-    dateStyle: 'short',
+  const buildTime = new Intl.DateTimeFormat('en-US', {
+    dateStyle: 'long',
     timeStyle: 'long',
     timeZone,
   }).format(now);
