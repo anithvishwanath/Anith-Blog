@@ -587,15 +587,15 @@ sub {
         display: none;
     }
 
-    .blog-sidebar-lt {
-        order: 1;
-        background-color: var(--background-paper);
+    .img-container {
+        width: 100%;
     }
-
-    .blog-sidebar-rt {
-        order: 2;
-        background-color: var(--background-paper);
-        padding: 0;
+    
+    .img-container img {
+        max-width: 100%;
+        margin-bottom: .625em;
+        object-fit: contain;
+        height: 100%;
     }
 
     .post-container:first-child,
