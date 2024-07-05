@@ -7,11 +7,13 @@
         <meta name="generator" content="Eleventy"/>
         <meta name="description" content="{{ meta.description }}"/>
         <link rel="icon" href="https://fav.farm/🌱"/> {% include "partials/_meta.njk" %}
-        <link rel="stylesheet" href="../assets/css/styles.css">
+            <link rel="stylesheet" href="../assets/css/styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800 &display=swap');
+        </style>
     </head>
     <body>
         <div class="blog-container">
-            <div class="blog-sidebar-lt">
                 <nav class="navbar" role="navigation">
                     <header class="blog-header" role="banner">
                         <h1 class="blog-title">
@@ -28,7 +30,7 @@
                         {%- endfor %}
                     </ul>
                 </nav>
-                {% for year, yearPosts in collections.postsByYear %}
+                {# {% for year, yearPosts in collections.postsByYear %}
                     <div class="journal-entry-container">
                         <time class="sidebar-year">{{ year }}</time>
                         {% for post in yearPosts | reverse %}
@@ -40,8 +42,4 @@
                             </div>
                         {% endfor %}
                     </div>
-                {% endfor %}
-                {% include "partials/_footer.njk" %}
-            </div>
-    </body>
-</html>
+                {% endfor %} #}
