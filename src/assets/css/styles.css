@@ -670,40 +670,4 @@ sub {
     .time {
         font-size: var(--font-size-sm);
     }
-
-    .blog-footer {
-        font-size: var(--font-size-md);
-        padding-bottom: 0.625em;
-    }
-    
-    .blog-footer a[href] {
-        font-size: var(--font-size-md);
-        font-weight: 600;
-    }
-    
-    .blog-footer-title {
-        margin-bottom: 1.25em;
-        font-weight: 400;
-        color: var(--text-secondary);
-        letter-spacing: -.02em;
-    }
-    
-    .footer-list {
-        list-style-type: none;
-        font-size: var(--font-size-md);
-        margin: 0;
-    }
-    
-    .footer-list li {
-        margin-bottom: 0.25em;
-    }
-    
-    .footer-list li:last-child {
-        margin-top: 1em;
-    }
-    
-    .footer-commit {
-        font-size: var(--font-size-sm);
-        color: var(--text-secondary);
-    }
 }
