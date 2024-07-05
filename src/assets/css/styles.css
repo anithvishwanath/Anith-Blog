@@ -280,6 +280,7 @@ sub {
 .page-section-header {
     margin-top: 2.5em;
     margin-bottom: .15em;
+    font-weight: 500;
 }
 
 .page-divider {
@@ -411,7 +412,7 @@ sub {
 
 .post-title-page {
     font-size: var(--font-size-title);
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: -0.03em;
     line-height: 1.3;
     display: inline-block;
