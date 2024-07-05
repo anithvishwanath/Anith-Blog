@@ -194,6 +194,7 @@ sub {
 
 .nav-link {
     display: flex;
+    margin-bottom: 0;
 }
 
 .nav-links li a {
@@ -552,9 +553,8 @@ sub {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin: 0 auto;
         margin-top: 0.625em;
-        margin-bottom: 2.5em;
+        margin-bottom: 3.25em;
         padding: 0;
     }
 
@@ -568,8 +568,7 @@ sub {
     }
 
     .nav-links li {
-        font-size: var(--font-size-lg);
-        letter-spacing: -.04em;
+        letter-spacing: -.03em;
     }
 
     .nav-link:not(:last-child):after {
@@ -604,10 +603,6 @@ sub {
         margin-top: 0;
     }
 
-    /* .post-entries {
-        margin-bottom: 5em;
-    } */
-
     .post-title {
         display: block;
         width: 100%;
@@ -615,7 +610,6 @@ sub {
 
     .now-playing-container {
         gap: 0.625em;
-        background: var(--accent);
     }
 
     .album-art {
