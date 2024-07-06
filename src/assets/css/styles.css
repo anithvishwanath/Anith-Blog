@@ -554,6 +554,7 @@ sub {
         overflow: visible;
         background-color: var(--background-paper);
         max-width: 100%;
+        width: 100%;
     }
 
     p {
@@ -677,6 +678,7 @@ sub {
     }
 
     .time {
+        padding-top: 0;
         font-size: var(--font-size-sm);
     }
 
