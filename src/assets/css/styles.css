@@ -49,9 +49,9 @@
     --font-size-title: clamp(1.76rem, 0.35vi + 1.69rem, 2.11rem); */
 
     --font-size-sm: clamp(0.8rem, 0.04vi + 0.79rem, 0.84rem);
---font-size-md: clamp(1rem, 0.13vi + 0.97rem, 1.13rem);
---font-size-lg: clamp(1.25rem, 0.25vi + 1.2rem, 1.5rem);
---font-size-title: clamp(1.56rem, 0.44vi + 1.48rem, 2rem);
+    --font-size-md: clamp(1rem, 0.13vi + 0.97rem, 1.13rem);
+    --font-size-lg: clamp(1.25rem, 0.25vi + 1.2rem, 1.5rem);
+    --font-size-title: clamp(1.56rem, 0.44vi + 1.48rem, 2rem);
 
     /* --font-size-sm: clamp(0.85rem, 0.09vi + 0.83rem, 0.94rem);
     --font-size-md: clamp(1.06rem, 0.19vi + 1.02rem, 1.25rem);
