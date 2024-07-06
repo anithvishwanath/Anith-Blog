@@ -449,7 +449,7 @@ sub {
 .permalink,
 .back-btn {
     font-size: var(--font-size-md);
-    color: var(--text-primary) !important;
+    color: var(--text-secondary) !important;
     text-decoration: none;
     display: block;
     margin: 0;
