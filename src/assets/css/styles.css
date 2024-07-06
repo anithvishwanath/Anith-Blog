@@ -670,7 +670,6 @@ sub {
 
     .track {
         text-wrap: balance;
-        margin-bottom: 0.05em;
     }
 
     .artist {
