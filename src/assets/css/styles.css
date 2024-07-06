@@ -673,4 +673,8 @@ sub {
     .time {
         font-size: var(--font-size-sm);
     }
+
+    .blog-footer {
+        padding-bottom: 0.625em;
+    }
 }
