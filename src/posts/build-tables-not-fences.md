@@ -4,7 +4,7 @@ title: Build tables, not fences
 date: 2023-11-24
 ---
 
-As I lay in bed, stirred by the gentle chirping of birds in the early morning hours, sleep slipping away like elusive dreams, I found comfort in the glow of my phone screen. On Instagram, I saw that my friend Simon (whom I greatly love and admire; Simon if you’re reading this, I love you) had shared a post in his Stories, adding an unexpected touch of profound reflection in the quiet hours.
+As I lay in bed, stirred by the gentle chirping of birds in the early morning hours, sleep slipping away like elusive dreams, I found comfort in the glow of my phone screen. On Instagram, I saw that my friend Simon had shared a post in his Stories, adding an unexpected touch of profound reflection in the quiet hours.
 
 The post (in Dutch) reads:
 

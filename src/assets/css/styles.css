@@ -26,10 +26,15 @@
     --font-size-lg: clamp(0.93rem, 0.27vi + 0.88rem, 1.2rem);
     --font-size-title: clamp(1rem, 0.44vi + 0.91rem, 1.44rem); */
 
-    --font-size-sm: clamp(0.9rem, 0.06vi + 0.89rem, 0.94rem);
+    /* --font-size-sm: clamp(0.9rem, 0.06vi + 0.89rem, 0.94rem);
     --font-size-md: clamp(1.13rem, 0.21vi + 1.08rem, 1.25rem);
     --font-size-lg: clamp(1.41rem, 0.43vi + 1.32rem, 1.67rem);
-    --font-size-title: clamp(1.76rem, 0.77vi + 1.6rem, 2.22rem);
+    --font-size-title: clamp(1.76rem, 0.77vi + 1.6rem, 2.22rem); */
+
+    --font-size-sm: clamp(0.85rem, 0.09vi + 0.83rem, 0.94rem);
+    --font-size-md: clamp(1.06rem, 0.19vi + 1.02rem, 1.25rem);
+    --font-size-lg: clamp(1.33rem, 0.34vi + 1.26rem, 1.67rem);
+    --font-size-title: clamp(1.66rem, 0.56vi + 1.55rem, 2.22rem);
 
     /* --font-size-sm: 1rem;
     --font-size-md: 1.125rem;
@@ -76,7 +81,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     margin: 0 auto;
-    max-width: 680px;
+    max-width: 50%;
 }
 
 h1,
@@ -424,7 +429,7 @@ sub {
 .permalink,
 .back-btn {
     font-size: var(--font-size-md);
-    color: var(--text-secondary) !important;
+    color: var(--text-primary) !important;
     text-decoration: none;
     display: block;
     margin: 0;
@@ -464,8 +469,8 @@ sub {
 }
 
 .album-art img {
-    width: 120px;
-    height: 120px;
+    width: 96px;
+    height: 96px;
     border-radius: 0.5em;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1),
         0 0 15px 0 rgba(0, 0, 0, .1);
@@ -548,6 +553,7 @@ sub {
         height: auto;
         overflow: visible;
         background-color: var(--background-paper);
+        max-width: 100%;
     }
 
     p {
