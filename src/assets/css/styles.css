@@ -571,7 +571,7 @@ sub {
         padding: 0;
         height: auto;
         overflow: visible;
-        background-color: var(--background-paper);
+        background-color: var(--background-default);
         max-width: 100%;
         width: 100%;
     }
