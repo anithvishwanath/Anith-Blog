@@ -2,15 +2,16 @@
 layout: layouts/post.njk
 title: 2023, a recap
 tags: 
+    - personal
     - retrospective
     - yearly
 date: 2023-12-27
 ---
 Warm sunlight is spilling through my window, defying the season's usual cloak of grey, bathing the room in a golden glow. It is not the greatest backdrop for reflection and sifting through the memories that make up 2023 — a year that seems to have flown by rather quickly. As I bask in this warmth, there are some feelings of nostalgia and anticipation stirring within me. There was joy, happiness, sorrow, and grief in roughly equal parts, and a lot of yearning, manifesting, and hope.
 
-If I had to choose a few personal keywords/themes that fit the year 2023, it would be hope, resilience, and love.
+If I had to choose a keyword/theme that fit the year 2023, it would be resilience.
 
-<h3 class="page-section-header">Things that were good</h3>
+<h3 class="article-section-header">Things that were good</h3>
 <div class="page-divider"></div>
 
 **Career.** It was a great year in terms of the journey in my career — perhaps the best one yet. It was fantastic as I feel I've grown and have learned a lot this year, thanks to some AMAZING folks I met. It was all very fun and I am super thankful to the universe to have sent them my way. I will forever love, cherish, and be grateful to each of them. If I had to do it all again, I would not change a single thing.
@@ -37,12 +38,12 @@ I am very keen on spending time in the wilderness, out of the doors. I haven't t
 
 **Staying in shape.** I have been consistently going on long walks and jogs for the past year or two. According to my Apple Watch, I've been doing it daily for the past 697 days, and the next year I may expand to doing some strength training and not just cardio. That remains to be seen.
 
-<h3 class="page-section-header">The sad</h3>
+<h3 class="article-section-header">The sad</h3>
 <div class="page-divider"></div>
 
 **Loss.** I lost my grandmother early in the year. I have allowed myself to grieve and mourn her loss but am still filled with grief and sorrow from time to time. I still feel her absence and it is particularly painful to me since I spent a lot of time with her as a child. I believe she is in a better place now and I love her. She taught me to be gentle and kind, to live humbly without thinking too much of yourself/having too much of an ego, and to be resilient and caring.
 
-<h3 class="page-section-header">Gratitude / Thankful for</h3>
+<h3 class="article-section-header">Gratitude / Thankful for</h3>
 <div class="page-divider"></div>
 
 **New Friends.** I made some great new friends at work this year. Many good vibes, laughs, and fun! Folks that are inclusive, empathetic, tactful, and respectful of my boundaries. 
@@ -53,12 +54,12 @@ I am very keen on spending time in the wilderness, out of the doors. I haven't t
 
 **Growth as a creative.** Although I haven't worked on many projects personally this year, I have learned a LOT from friends at work this year, and I am extremely grateful to each person for that. They have opened my eyes in many ways and I am glad to have gotten that experience from them. I look forward to passing on what I've learned to others. 
 
-<h3 class="page-section-header">Things I look forward to</h3>
+<h3 class="article-section-header">Things I look forward to</h3>
 <div class="page-divider"></div>
 
 **Nurturing myself and my relationships.** I want to identify and work through any undesirable traits and be the best possible version of myself and at the same time continue opening up to people. Lift people up. Give credit where it's due. Let folks know I love them. Life is short but love springs eternally.
 
-**Relocating.** !!!
+**Relocating.** !
 
 **Getting a job.** I strongly believe I will get a job after moving at some point, but the uncertainty has me a bit stressed out at the moment.
 
@@ -78,7 +79,7 @@ I decree today, that in 2024, I plan to create more things for myself and my fri
 
 **Watching new movies.** I have mostly only rewatched movies this year, and want to make time to watching New movies. New experiences; new ways to make you think and feel. 
 
-<h3 class="page-section-header">Media recs (from what I consumed this year)</h3>
+<h3 class="article-section-header">Media recs (from what I consumed this year)</h3>
 <div class="page-divider"></div>
 
 **Books.** _The Lord of the Rings (1968)_, by J. R. R. Tolkien. No question about it. Best book ever written. 
