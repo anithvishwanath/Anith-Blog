@@ -121,7 +121,7 @@ h3 {
 
 p {
     font-size: var(--font-size-md);
-    line-height: 1.5;
+    line-height: 1.7;
     margin-bottom: 1em;
 }
 
@@ -305,10 +305,21 @@ sub {
     text-decoration: none;
 }
 
+.spacer {
+    margin-top: 2em;
+}
+
 .page-section-header {
     margin-top: 2.5em;
     margin-bottom: .15em;
     font-weight: 700;
+}
+
+.article-section-header {
+    margin-top: 2.5em;
+    margin-bottom: .15em;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .page-divider {
@@ -576,6 +587,7 @@ sub {
 
     p {
         text-align: left;
+        line-height: 1.6;
     }
 
     .navbar {
