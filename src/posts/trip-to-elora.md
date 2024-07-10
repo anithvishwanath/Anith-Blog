@@ -8,7 +8,7 @@ date: 2024-07-08
 ---
 Recently, I had the pleasure of visiting Elora for a day trip with my cousin and family (including my adorable little niece!)
 
-Elora is a charming little town and it was the perfect backdrop for a day of exploration and relaxation. The drizzling weather during our visit reminded me of Melbourne with its chill and laidback vibe. We wandered through the quaint shops, explored the Bissell park trail, and visited the Gorge.
+Elora is a charming little town and it was the perfect backdrop for a day of exploration and relaxation. The drizzling weather during our visit reminded me of Melbourne with its chill and laidback vibe. We wandered through the quaint shops and explored the city centre, and the Bissell park trail.
 
 <h3 class="article-section-header">Morning</h3>
 <div class="page-divider"></div>
