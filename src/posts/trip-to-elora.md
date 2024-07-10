@@ -6,14 +6,14 @@ tags:
     - travel
 date: 2024-07-08
 ---
-Recently, I had the pleasure of visiting Elora for a day trip with my cousin and her family (including my adorable niece!)
+Recently, I had the pleasure of visiting Elora for a day trip with my cousin and family (including my adorable little niece!)
 
 Elora is a charming little town and it was the perfect backdrop for a day of exploration and relaxation. The drizzling weather during our visit reminded me of Melbourne with its chill and laidback vibe. We wandered through the quaint shops, explored the Bisset park trail, and visited the Gorge.
 
 <h3 class="article-section-header">Morning</h3>
 <div class="page-divider"></div>
 
-**Arrival and exploring the town.** We set off at around 10 AM in the morning, eager to make the most of our day in Elora. The drive was filled with anticipation as we passed farms that had cows and horses – a glimpse of Ontario's Greenbelt on the outskirts of Guelph (perhaps).
+**Arrival and exploring the town.** We set off at around 10 AM in the morning, eager to make the most of our day in Elora. The drive was filled with anticipation as we passed farmlands that had cows and horses – a glimpse of Ontario's Greenbelt on the outskirts of Guelph (perhaps).
 
 <div class="img-container">
     {% image "elora/elora-city-hall.png", "Photo showing the Elora city hall" %}
@@ -54,4 +54,4 @@ Elora is a charming little town and it was the perfect backdrop for a day of exp
 <h3 class="article-section-header">Conclusion</h3>
 <div class="page-divider"></div>
 
-Our day trip to Elora was a wonderful escape from the rush and push of everyday life. The combination of natural beauty and artistic charm made it an unforgettable experience. Although we weren't able to visit all the spots on our list (the Conservation Gorge area especially!), I look forward to covering these unvisited areas on our next trip. I’m already looking forward about my next visit!
+Our day trip to Elora was a wonderful escape from the rush and push of everyday life. The combination of natural beauty and artistic charm made it an unforgettable experience. I’m already looking forward to my next visit!
