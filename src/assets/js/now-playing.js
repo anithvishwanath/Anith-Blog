@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getTrackData(data) {
         // Process the track data received from the API (e.g., display it)
-        console.log(data); // Example: log the data to the console
         var track = data.recenttracks.track[0].name;
         document.getElementById("track-name").textContent += track;
 

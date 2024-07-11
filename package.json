@@ -13,7 +13,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@barba/core": "^2.10.0",
     "@grimlink/eleventy-plugin-lucide-icons": "^2.0.1",
     "lodash": "^4.17.21",
     "luxon": "^3.4.3",

@@ -4,5 +4,9 @@ eleventyNavigation:
     key: Journal
     order: 1
 ---
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<main role="main"  data-barba="wrapper" class="blog-content">
+    <section data-barba="container">
+        {% set postslistCounter = collections.posts | length %}
+        {% include "postslist.njk" %}
+    </section>
+</main>

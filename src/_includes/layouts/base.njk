@@ -1,13 +1,9 @@
 {% include "partials/_header.njk" %}
-<main role="main" class="blog-content" data-barba="wrapper">
-        <section role="main" data-barba="container">
-                {{ content | safe }}
-        </main>
-</main>
+        {{ content | safe }}
 {% include "partials/_footer.njk" %}
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.0/dist/barba.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@barba/css@2.1.16/dist/barba-css.umd.min.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../../assets/js/barba.js"></script>
+<script src="../../assets/js/barba-css.js"></script>
+<script src="../../assets/js/main.js"></script>
 </body>
 </html>

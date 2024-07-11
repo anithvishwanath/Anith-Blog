@@ -6,65 +6,69 @@ eleventyNavigation:
     key: Now
     order: 2
 ---
-<article class="post-item">
-    <h2 class="post-title-page">{{ title }}</h2>
-    <p class="post-links">Last updated on {{ page.date | fullDate }}</p>
+<main role="main"  data-barba="wrapper" class="blog-content">
+    <section data-barba="container">
+        <article class="post-item">
+            <h2 class="post-title-page">{{ title }}</h2>
+            <p class="post-links">Last updated on {{ page.date | fullDate }}</p>
 
-    <p>This page is meant to be a snapshot of my life — my interests, goals, feelings, passions, what I am doing currently, and my future plans. 
+            <p>This page is meant to be a snapshot of my life — my interests, goals, feelings, passions, what I am doing currently, and my future plans. 
 
-    Inspired by <a href="https://nownownow.com/" target="_blank">nownownow</a>.</p>
+            Inspired by <a href="https://nownownow.com/" target="_blank">nownownow</a>.</p>
 
-    <h3 class="page-section-header">What am I up to?</h3>
-    <div class="page-divider"></div>
-    <p>Missing my friends and family a bit — that is how I feel lately. I am thinking of creative ideas too in the background. I just need to take some time to set my priorities straight. </p>
+            <h3 class="page-section-header">What am I up to?</h3>
+            <div class="page-divider"></div>
+            <p>Missing my friends and family a bit — that is how I feel lately. I am thinking of creative ideas too in the background. I just need to take some time to set my priorities straight. </p>
 
-    <h3 class="page-section-header">Work</h3>
-    <div class="page-divider"></div>
-    <p>I am currently actively looking for a job, and am <a href="https://anith.design" target="_blank">folio</a> ready.</p>
+            <h3 class="page-section-header">Work</h3>
+            <div class="page-divider"></div>
+            <p>I am currently actively looking for a job, and am <a href="https://anith.design" target="_blank">folio</a> ready.</p>
 
-    <h3 class="page-section-header">Last photo I took</h3>
-    <div class="page-divider"></div>
-    <div class="img-container">
-        {% image "late-afternoon-walk.png", "Photo of myself looking in the distance while holding my hood up" %}
-        <p>A photo of myself from a late afternoon stroll out in the rain today. It was very windy and cold.</p>
-    </div>
-
-    <h3 class="page-section-header">Reading</h3>
-    <div class="page-divider"></div>
-    <p>Last month, I picked up Tress of the Emerald Sea, by Brandon Sanderson. I think I'm 3 chapters in and I haven't kept up since. I'll definitely get back to it sometime soon.</p>
-
-    <h3 class="page-section-header">Listening to</h3>
-    <div class="page-divider"></div>
-    <div class="now-playing-container">
-        <div class="album-art">
-            <img id="album-artwork" class="alb-art" alt="album artwork"/>
-        </div>
-        <div class="row">
-            <div class="track-data-container">
-                <span class="row-label">Track</span>
-                <span id="track-name" class="row-data track"></span>
-                <span class="row-label">Artist</span>
-                <span id="artist-name" class="row-data artist"></span>
+            <h3 class="page-section-header">Last photo I took</h3>
+            <div class="page-divider"></div>
+            <div class="img-container">
+                {% image "late-afternoon-walk.png", "Photo of myself looking in the distance while holding my hood up" %}
+                <p>A photo of myself from a late afternoon stroll out in the rain today. It was very windy and cold.</p>
             </div>
-            <div class="listen-data-container">
-                <span class="row-label">Listened</span>
-                <span id="listen-date" class="row-data time"></span>
+
+            <h3 class="page-section-header">Reading</h3>
+            <div class="page-divider"></div>
+            <p>Last month, I picked up Tress of the Emerald Sea, by Brandon Sanderson. I think I'm 3 chapters in and I haven't kept up since. I'll definitely get back to it sometime soon.</p>
+
+            <h3 class="page-section-header">Listening to</h3>
+            <div class="page-divider"></div>
+            <div class="now-playing-container">
+                <div class="album-art">
+                    <img id="album-artwork" class="alb-art" alt="album artwork"/>
+                </div>
+                <div class="row">
+                    <div class="track-data-container">
+                        <span class="row-label">Track</span>
+                        <span id="track-name" class="row-data track"></span>
+                        <span class="row-label">Artist</span>
+                        <span id="artist-name" class="row-data artist"></span>
+                    </div>
+                    <div class="listen-data-container">
+                        <span class="row-label">Listened</span>
+                        <span id="listen-date" class="row-data time"></span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <h3 class="page-section-header">Watching</h3>
-    <div class="page-divider"></div>
-    <p>I finished rewatching the first three seasons of Arrested Development recently. Now I fall asleep to random comedy movies in the night.</p>
+            <h3 class="page-section-header">Watching</h3>
+            <div class="page-divider"></div>
+            <p>I finished rewatching the first three seasons of Arrested Development recently. Now I fall asleep to random comedy movies in the night.</p>
 
-    <h3 class="page-section-header">The future</h3>
-    <div class="page-divider"></div>
-    <p>I've been meaning to take some courses and work on some personal ideas but I haven't been able to make time unfortunately. There is a lot going on.</p>
-    <p>✨ In terms of my blog though:</p> 
-    <ul>
-    <li><p>I plan to write more about design, creativity, and the creative practice this year. I've marked some  podcasts, lectures, and books to help put me on that path.</p></li>
-    <li><p>While working on revamping my blog, I was thinking I might share some links, bookmarks, and interesting finds... probably introduce tags at some point to help categorise posts.</p></li> 
-    <li><p>I think I may also add a /log page at some point to my blog to keep track of all media I've consumed. We shall see!</p></li>
-    </ul>
-</article>
+            <h3 class="page-section-header">The future</h3>
+            <div class="page-divider"></div>
+            <p>I've been meaning to take some courses and work on some personal ideas but I haven't been able to make time unfortunately. There is a lot going on.</p>
+            <p>✨ In terms of my blog though:</p> 
+            <ul>
+            <li><p>I plan to write more about design, creativity, and the creative practice this year. I've marked some  podcasts, lectures, and books to help put me on that path.</p></li>
+            <li><p>While working on revamping my blog, I was thinking I might share some links, bookmarks, and interesting finds... probably introduce tags at some point to help categorise posts.</p></li> 
+            <li><p>I think I may also add a /log page at some point to my blog to keep track of all media I've consumed. We shall see!</p></li>
+            </ul>
+        </article>
+    </section>
+</main>
 <script src="../../assets/js/now-playing.js" defer></script>
