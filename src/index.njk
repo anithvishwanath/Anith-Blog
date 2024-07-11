@@ -1,11 +1,14 @@
 ---
 layout: layouts/base.njk
+title: Journal
 eleventyNavigation:
     key: Journal
     order: 1
 ---
 <main role="main"  data-barba="wrapper" class="blog-content">
     <section data-barba="container">
+        <h2 class="post-title-page">{{ title }}</h2>
+        <p class="post-links">An index of my blog posts.</p>
         {% set postslistCounter = collections.posts | length %}
         {% include "postslist.njk" %}
     </section>
