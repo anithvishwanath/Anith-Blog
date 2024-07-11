@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         ]
     });
+    fetchNowPlaying();
 });
 
 function fetchNowPlaying() {
