@@ -579,30 +579,29 @@ sub {
 .fade-leave-active,
 .fade-enter-active,
 .fade-once-active {
-    transition: opacity var(--timing) var(--bezier),
-        transform var(--timing) var(--bezier);
+    transition: opacity var(--timing) var(--bezier);
 }
 
 .fade-leave {
     opacity: 1;
-    transform: translate(0, 0);
+    /* transform: translate(0, 0); */
 }
 
 .fade-leave-to {
     opacity: 0;
-    transform: translate(0, 20px);
+    /* transform: translate(0, 20px); */
 }
 
 .fade-enter,
 .fade-once {
     opacity: 0;
-    transform: translate(0, 20px);
+    /* transform: translate(0, 20px); */
 }
 
 .fade-enter-to,
 .fade-once-to {
     opacity: 1;
-    transform: translate(0, 0);
+    /* transform: translate(0, 0); */
 }
 
 /* ———————— MEDIA QUERIES ——————— */
