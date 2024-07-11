@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                 },
                 afterEnter(data) {
+                    data.next.container.classList.remove('fade-enter', 'fade-enter-active');
                     fetchNowPlaying();
                 }
             }
