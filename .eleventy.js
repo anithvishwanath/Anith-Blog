@@ -103,13 +103,13 @@ module.exports = function (eleventyConfig) {
   });
 
   /* Post sorting in the sidebar */
-  eleventyConfig.addCollection("allPostsSorted", function(collectionApi) {
+  eleventyConfig.addCollection("allPostsSorted", function (collectionApi) {
     return collectionApi.getFilteredByTag("posts").map(post => {
       post.data.year = post.date.getFullYear();
       return post;
     }).sort((a, b) => b.date - a.date);
   });
-
+  
   eleventyConfig.addShortcode("first_image", (post) => extractFirstImage(post));
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
