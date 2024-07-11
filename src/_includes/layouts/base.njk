@@ -1,8 +1,11 @@
 {% include "partials/_header.njk" %}
-        <main role="main" class="blog-content">
+<main role="main" class="blog-content" data-barba="wrapper">
+        <section role="main" data-barba="container">
                 {{ content | safe }}
         </main>
+</main>
 {% include "partials/_footer.njk" %}
 </div>
+<script src="../../assets/js/main.js"></script>
 </body>
 </html>

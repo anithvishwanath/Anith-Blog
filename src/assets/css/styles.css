@@ -67,6 +67,9 @@
     --font-size-lg: 1rem;
     --font-size-md: 0.875rem;
     --font-size-sm: 0.75rem; */
+
+    --timing: 0.25s;
+    --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -571,6 +574,29 @@ sub {
     padding-top: 1.2em;
     padding-bottom: 0.2em;
 }
+
+/* Page transitions */
+.fade-leave-active,
+.fade-enter-active {
+  transition:  opacity var(--timing) var(--bezier);
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-to {
+    opacity: 1;
+}
+
 
 /* ———————— MEDIA QUERIES ——————— */
 /* Phone */
