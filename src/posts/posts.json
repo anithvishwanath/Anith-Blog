@@ -1,5 +1,5 @@
 {
     "layout": "layouts/post.njk",
-    "permalink": "/{{ page.fileSlug }}/",
+    "permalink": "/journal/{{ page.fileSlug }}/",
     "tags": "posts"
 }
