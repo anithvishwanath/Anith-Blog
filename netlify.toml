@@ -3,11 +3,11 @@
   command = "DEBUG=* eleventy"
 
 [[redirects]]
-from = "/*"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
   from = "/trip-to-elora/index.html"
   to = "/journal/trip-to-elora/index.html"
   status = 301
+
+[[redirects]]
+from = "/*"
+to = "/404/index.html"
+status = 404
