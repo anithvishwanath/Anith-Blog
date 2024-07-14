@@ -1,15 +1,22 @@
 ---
 layout: layouts/base.njk
-title: Journal
-eleventyNavigation:
-    key: Journal
-    order: 1
 ---
-<main role="main"  data-barba="wrapper" class="blog-content">
+{# <main role="main"  data-barba="wrapper" class="blog-content">
     <section data-barba="container">
         <h2 class="post-title-page">{{ title }}</h2>
         <p class="post-links">An index of my blog posts.</p>
         {% set postslistCounter = collections.posts | length %}
         {% include "postslist.njk" %}
+    </section>
+</main> #}
+<main role="main"  data-barba="wrapper" class="blog-content">
+    <section data-barba="container">
+        <h2 class="post-title-page">Hello there!</h2>
+        <p>Hey friend! Welcome to my digital garden &mdash; feel free to browse around.</p>
+        <p>I’m a designer exploring creativity, compassion, and emotional expression through my writing. 
+            My garden is a safe haven for freedom and exploration, where I gracefully and thoughtfully nurture my ideas. </p>
+        <div class="img-container home">
+            {% image "anith-garden-c.jpeg", "Low-res dithered photo showing a stone seat in a garden" %}
+        </div>
     </section>
 </main>
