@@ -8,6 +8,6 @@ to = "/404/index.html"
 status = 404
 
 [[redirects]]
-  from = "/trip-to-elora"
+  from = "/trip-to-elora/index.html"
   to = "/journal/trip-to-elora/index.html"
   status = 301
