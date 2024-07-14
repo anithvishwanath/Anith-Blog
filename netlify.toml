@@ -3,6 +3,6 @@
   command = "DEBUG=* eleventy"
 
 [[redirects]]
-from = "/en/*"
-to = "/en/404.njk"
+from = "/*"
+to = "/404.njk"
 status = 404
