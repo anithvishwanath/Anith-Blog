@@ -6,3 +6,8 @@
 from = "/*"
 to = "/404/index.html"
 status = 404
+
+[[redirects]]
+  from = "/trip-to-elora"
+  to = "/journal/trip-to-elora"
+  status = 301
