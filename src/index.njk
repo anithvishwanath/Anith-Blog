@@ -1,23 +1,34 @@
 ---
 layout: layouts/base.njk
+numberOfLatestPostsToShow: 3
 ---
-{# <main role="main"  data-barba="wrapper" class="blog-content">
-    <section data-barba="container">
-        <h2 class="post-title-page">{{ title }}</h2>
-        <p class="post-links">An index of my blog posts.</p>
-        {% set postslistCounter = collections.posts | length %}
-        {% include "postslist.njk" %}
-    </section>
-</main> #}
-<main role="main"  data-barba="wrapper" class="blog-content">
+<main role="main" data-barba="wrapper" class="blog-content">
     <section data-barba="container">
         <h2 class="post-title-page">Hello there!</h2>
         <p class="post-links">Hey friend! Thank you for stopping by!</p>
         <div class="img-container home">
             {% image "anith-garden-c.jpeg", "Low-res dithered photo showing a stone seat in a garden" %}
         </div>
-        <p>Welcome to my digital garden &mdash; feel free to browse around.</p>
-        <p>I’m a designer exploring creativity, compassion, and emotional expression through my writing. 
-            My garden is a safe haven for freedom and exploration, where I thoughtfully nurture my ideas. </p>
+        <p>Welcome to my digital garden &mdash; feel free to explore and look around.</p>
+        <p>I’m a designer exploring creativity, compassion, and emotional expression through my writing. My garden is a safe
+            haven for freedom and exploration, where I thoughtfully nurture my ideas.
+        </p>
+
+        <div class="journal-index">
+        {% set postsCount = collections.posts | length %}
+        {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+        <h2 class="post-title-page index">Latest {{ latestPostsCount }} post{% if latestPostsCount != 1 %}s{% endif %}</h2>
+
+        {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+        {% set postslistCounter = postsCount %}
+        {% include "postslist.njk" %}
+
+        {% set morePosts = postsCount - numberOfLatestPostsToShow %}
+        {% if morePosts > 0 %}
+            <p class="post-links index">{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %}
+                can be found in
+                <a href="/journal/">my journal</a>.</p>
+        {% endif %}
+        </div>
     </section>
 </main>

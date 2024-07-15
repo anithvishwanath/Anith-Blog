@@ -1,6 +1,6 @@
 <article>
 <ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in collections.posts | reverse %}
+{% for post in postslist | reverse %}
   <li class="post-entries">
       <span class="postlist-item">
         {# <time class="journal-entry-responsive" datetime="{{ post.date }}">{{ post.date | fullDate }}</time> #}
