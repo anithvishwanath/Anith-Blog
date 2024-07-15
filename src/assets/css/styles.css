@@ -343,6 +343,7 @@ sub {
 .img-container.home img {
     width: 100%;
     height: 286px;
+    border-radius: 2px;
 }
 
 /* Blog Footer */
@@ -682,6 +683,8 @@ sub {
 
     .img-container.home img {
         object-fit: cover;
+        border-radius: 4px;
+        height: 240px;
     }
 
     .post-container:first-child,
