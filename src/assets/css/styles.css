@@ -254,12 +254,6 @@ sub {
     height: 100vh;
 }
 
-.journal-index {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5em;
-}
-
 .journal-entry-container {
     display: flex;
     flex-direction: column;
@@ -468,10 +462,6 @@ sub {
     display: inline-block;
 }
 
-.post-title-page.index {
-    margin-bottom: 0.313em;
-}
-
 .permalink,
 .back-btn {
     font-size: var(--font-size-md);
@@ -495,7 +485,7 @@ sub {
 }
 
 .post-links.index {
-    margin-top: 0.625em;
+    margin-top: 0.313em;
 }
 
 /* Media — Now Listening */
@@ -677,12 +667,6 @@ sub {
         flex-direction: column;
     }
 
-    .journal-index {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.25em;
-    }
-
     .journal-entry-container {
         display: none;
     }
@@ -713,10 +697,6 @@ sub {
         display: block;
         width: 100%;
     }
-    
-    /* .post-title-page.index {
-        margin-bottom: 0.625em;
-    } */
 
     .page-section-header {
         font-weight: 600;
